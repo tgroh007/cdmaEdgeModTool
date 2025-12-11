@@ -49,7 +49,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>k-64x64.ico</ApplicationIcon>
+    <ApplicationIcon>k-64x64_2.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -166,6 +166,7 @@
     <None Include="Metro_Logo.png" />
     <None Include="Cricket Black.png" />
     <Content Include="k-64x64.ico" />
+    <Content Include="k-64x64_2.ico" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

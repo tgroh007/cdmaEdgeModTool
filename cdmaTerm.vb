@@ -1,4 +1,4 @@
- '' CDMA DEV TERM
+'' CDMA DEV TERM
 '' Copyright (c) Dillon Graham 2010-2012 Chromableed Studios
 '' www.chromableedstudios.com
 '' chromableedstudios ( a t ) gmail ( d o t ) com
@@ -54,7 +54,7 @@ Public Class cdmaModTool
     Friend serialportType As String = "blackberry"
 
     Public newCommandRxd As Boolean
-  
+
     Public myD As New DmPort
     Public sdr As New SecretDecoderRing
 
@@ -1661,7 +1661,7 @@ ends:
         Catch ex As Exception
 
         End Try
-      
+
 
     End Sub
 
@@ -1684,21 +1684,21 @@ ends:
 
             ' Add the root node's children to the TreeView.
             trv.Nodes.Clear()
-            AddTreeViewChildNodes(trv.Nodes, _
+            AddTreeViewChildNodes(trv.Nodes,
                 xml_doc.DocumentElement)
         Catch ex As Exception
 
         End Try
 
-      
+
     End Sub
     ' Add the children of this XML node 
     ' to this child nodes collection.
-    Private Sub AddTreeViewChildNodes(ByVal parent_nodes As  _
+    Private Sub AddTreeViewChildNodes(ByVal parent_nodes As _
         TreeNodeCollection, ByVal xml_node As XmlNode)
         For Each child_node As XmlNode In xml_node.ChildNodes
             ' Make the new TreeView node.
-            Dim new_node As TreeNode = _
+            Dim new_node As TreeNode =
                 parent_nodes.Add(child_node.Value)
 
             ' Recursively make this node's descendants.
@@ -1897,7 +1897,7 @@ ends:
     Private Sub convertToAsciiTextBox_Other(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles convertToAsciiTextBox.LostFocus
         AtReturnCmdBox.Text = biznytesToStrizings(ASCIIEncoding.ASCII.GetBytes(convertToAsciiTextBox.Text))
 
-     
+
     End Sub
 
     Private Sub ComboBox2_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComboBox2.SelectedIndexChanged
@@ -2670,7 +2670,7 @@ ends:
         OpenFileDialog1.CheckFileExists = True
         Dim dialogResult As DialogResult = OpenFileDialog1.ShowDialog()
 
-        If (dialogResult = dialogResult.OK) Then
+        If (dialogResult = DialogResult.OK) Then
             EfsFile = OpenFileDialog1.SafeFileName
 
             Dim EfsQc As New Qcdm
@@ -2801,7 +2801,7 @@ ends:
         Else
             Return "/"
         End If
-       
+
     End Function
 
     Private Sub treeView_NodeMouseClick(ByVal sender As Object, ByVal e As TreeNodeMouseClickEventArgs) Handles FolderTreeView1.NodeMouseClick
@@ -2889,7 +2889,7 @@ ends:
         Catch ex As Exception
             MessageBox.Show("Delete Error: " + ex.ToString)
         End Try
-        
+
     End Sub
 
     Private Sub ReadNamLockBtn_Click(sender As System.Object, e As System.EventArgs) Handles ReadNamLockBtn.Click
@@ -2944,6 +2944,10 @@ ends:
     End Function
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
 End Class

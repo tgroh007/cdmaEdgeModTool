@@ -23,8 +23,8 @@ Partial Class cdmaModTool
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(cdmaModTool))
-        Dim TreeNode27 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("EFS Files")
-        Dim TreeNode28 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("/")
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("EFS Files")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("/")
         Me.ATSendButton = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TermSendBox = New System.Windows.Forms.TextBox()
@@ -2273,7 +2273,6 @@ Partial Class cdmaModTool
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.cdmaTerm.My.Resources.Resources.Cricket_Black1
         Me.PictureBox1.Location = New System.Drawing.Point(7, 16)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
@@ -3147,9 +3146,9 @@ Partial Class cdmaModTool
         Me.FileTreeView2.Location = New System.Drawing.Point(201, 111)
         Me.FileTreeView2.Margin = New System.Windows.Forms.Padding(4)
         Me.FileTreeView2.Name = "FileTreeView2"
-        TreeNode27.Name = "Node0"
-        TreeNode27.Text = "EFS Files"
-        Me.FileTreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode27})
+        TreeNode3.Name = "Node0"
+        TreeNode3.Text = "EFS Files"
+        Me.FileTreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode3})
         Me.FileTreeView2.Size = New System.Drawing.Size(532, 484)
         Me.FileTreeView2.TabIndex = 1
         '
@@ -3158,9 +3157,9 @@ Partial Class cdmaModTool
         Me.FolderTreeView1.Location = New System.Drawing.Point(4, 111)
         Me.FolderTreeView1.Margin = New System.Windows.Forms.Padding(4)
         Me.FolderTreeView1.Name = "FolderTreeView1"
-        TreeNode28.Name = "Node0"
-        TreeNode28.Text = "/"
-        Me.FolderTreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode28})
+        TreeNode4.Name = "Node0"
+        TreeNode4.Text = "/"
+        Me.FolderTreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode4})
         Me.FolderTreeView1.Size = New System.Drawing.Size(188, 416)
         Me.FolderTreeView1.TabIndex = 0
         '
@@ -3297,7 +3296,7 @@ Partial Class cdmaModTool
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(1134, 21)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(1173, 21)
         Me.ToolStripStatusLabel1.Spring = True
         Me.ToolStripStatusLabel1.Text = "cdmaModTool"
         '
@@ -3322,7 +3321,6 @@ Partial Class cdmaModTool
         '
         'PictureBox7
         '
-        Me.PictureBox7.Image = Global.cdmaTerm.My.Resources.Resources.k_64x64
         Me.PictureBox7.Location = New System.Drawing.Point(1021, 203)
         Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox7.Name = "PictureBox7"
