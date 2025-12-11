@@ -23,8 +23,8 @@ Partial Class cdmaModTool
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(cdmaModTool))
-        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("EFS Files")
-        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("/")
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("EFS Files")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("/")
         Me.ATSendButton = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TermSendBox = New System.Windows.Forms.TextBox()
@@ -2273,6 +2273,7 @@ Partial Class cdmaModTool
         '
         'PictureBox1
         '
+        Me.PictureBox1.Image = Global.cdmaTerm.My.Resources.Resources.Cricket_Black1
         Me.PictureBox1.Location = New System.Drawing.Point(7, 16)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
@@ -3146,9 +3147,9 @@ Partial Class cdmaModTool
         Me.FileTreeView2.Location = New System.Drawing.Point(201, 111)
         Me.FileTreeView2.Margin = New System.Windows.Forms.Padding(4)
         Me.FileTreeView2.Name = "FileTreeView2"
-        TreeNode3.Name = "Node0"
-        TreeNode3.Text = "EFS Files"
-        Me.FileTreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode3})
+        TreeNode1.Name = "Node0"
+        TreeNode1.Text = "EFS Files"
+        Me.FileTreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1})
         Me.FileTreeView2.Size = New System.Drawing.Size(532, 484)
         Me.FileTreeView2.TabIndex = 1
         '
@@ -3157,9 +3158,9 @@ Partial Class cdmaModTool
         Me.FolderTreeView1.Location = New System.Drawing.Point(4, 111)
         Me.FolderTreeView1.Margin = New System.Windows.Forms.Padding(4)
         Me.FolderTreeView1.Name = "FolderTreeView1"
-        TreeNode4.Name = "Node0"
-        TreeNode4.Text = "/"
-        Me.FolderTreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode4})
+        TreeNode2.Name = "Node0"
+        TreeNode2.Text = "/"
+        Me.FolderTreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode2})
         Me.FolderTreeView1.Size = New System.Drawing.Size(188, 416)
         Me.FolderTreeView1.TabIndex = 0
         '
