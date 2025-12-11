@@ -3299,7 +3299,7 @@ Partial Class cdmaModTool
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(1173, 21)
         Me.ToolStripStatusLabel1.Spring = True
-        Me.ToolStripStatusLabel1.Text = "cdmaModTool"
+        Me.ToolStripStatusLabel1.Text = "Digital Consulting and LLM Agents"
         '
         'ToolStripProgressBar1
         '

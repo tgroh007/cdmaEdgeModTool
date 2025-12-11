@@ -2950,4 +2950,12 @@ ends:
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
     End Sub
+
+    Private Sub ToolStripStatusLabel1_Click(sender As Object, e As EventArgs) Handles ToolStripStatusLabel1.Click
+
+    End Sub
+
+    Private Sub ChromableedLogo_Click(sender As Object, e As EventArgs) Handles ChromableedLogo.Click
+
+    End Sub
 End Class
