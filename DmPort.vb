@@ -71,7 +71,7 @@ Public Class DmPort
 
 
     Public Function GetBufferWithCRC(ByVal s As String) As Byte()
-        Return GetBufferWithCRC(cdmaTerm.String_To_Bytes(s), (s.Length / 2))
+        Return GetBufferWithCRC(cdmaModTool.String_To_Bytes(s), (s.Length / 2))
     End Function
     Public Function GetBufferWithCRC(ByVal bs As Byte()) As Byte()
         Return GetBufferWithCRC(bs, (bs.Length))
@@ -156,7 +156,7 @@ Public Class DmPort
             '' cdmaTerm.mySerialPort.DiscardInBuffer()
 
 
-            cdmaTerm.mySerialPort2.Write(txBuffer)
+            cdmaModTool.mySerialPort2.Write(txBuffer)
 
             '' Dim buffer = New Byte(cdmaTerm.mySerialPort2.ReadBufferSize - 1) {}
             Dim buffer = New Byte(&H1000) {}
@@ -170,26 +170,26 @@ Public Class DmPort
             Dim readCount As Integer = 0
 
 
-            readCount = cdmaTerm.mySerialPort2.Read(buffer)
+            readCount = cdmaModTool.mySerialPort2.Read(buffer)
 
             ''Test for late response
             If readCount = 0 Then
                 Thread.Sleep(150)
 
-                readCount = cdmaTerm.mySerialPort2.Read(buffer)
+                readCount = cdmaModTool.mySerialPort2.Read(buffer)
             ElseIf ((buffer(0) = &H26) And readCount < 136) Then
-                readCount = cdmaTerm.mySerialPort2.Read(buffer)
+                readCount = cdmaModTool.mySerialPort2.Read(buffer)
                 ''test
                 ''resend command for only half of response recieved
                 Dim buffer2 = New Byte(&H1000) {}
-                cdmaTerm.mySerialPort2.Write(txBuffer)
-                readCount = cdmaTerm.mySerialPort2.Read(buffer2)
+                cdmaModTool.mySerialPort2.Write(txBuffer)
+                readCount = cdmaModTool.mySerialPort2.Read(buffer2)
                 Array.Copy(buffer2, buffer, buffer.Length)
             End If
             ''Test for REALLY late response
             If readCount = 0 Then
                 Thread.Sleep(100)
-                readCount = cdmaTerm.mySerialPort2.Read(buffer)
+                readCount = cdmaModTool.mySerialPort2.Read(buffer)
             Else
                 For i As Integer = 0 To readCount - 1
                     responseList.Add(buffer(i))
@@ -225,7 +225,7 @@ Public Class DmPort
             '' cdmaTerm.mySerialPort.DiscardInBuffer()
 
 
-            cdmaTerm.mySerialPort2.Write(txBuffer)
+            cdmaModTool.mySerialPort2.Write(txBuffer)
 
             '' Dim buffer = New Byte(cdmaTerm.mySerialPort2.ReadBufferSize - 1) {}
             Dim buffer = New Byte(&H1000) {}
@@ -239,26 +239,26 @@ Public Class DmPort
             Dim readCount As Integer = 0
 
 
-            readCount = cdmaTerm.mySerialPort2.Read(buffer)
+            readCount = cdmaModTool.mySerialPort2.Read(buffer)
 
             ''Test for late response
             If readCount = 0 Then
                 Thread.Sleep(150)
 
-                readCount = cdmaTerm.mySerialPort2.Read(buffer)
+                readCount = cdmaModTool.mySerialPort2.Read(buffer)
             ElseIf ((buffer(0) = &H26) And readCount < 136) Then
-                readCount = cdmaTerm.mySerialPort2.Read(buffer)
+                readCount = cdmaModTool.mySerialPort2.Read(buffer)
                 ''test
                 ''resend command for only half of response recieved
                 Dim buffer2 = New Byte(&H1000) {}
-                cdmaTerm.mySerialPort2.Write(txBuffer)
-                readCount = cdmaTerm.mySerialPort2.Read(buffer2)
+                cdmaModTool.mySerialPort2.Write(txBuffer)
+                readCount = cdmaModTool.mySerialPort2.Read(buffer2)
                 Array.Copy(buffer2, buffer, buffer.Length)
             End If
             ''Test for REALLY late response
             If readCount = 0 Then
                 Thread.Sleep(100)
-                readCount = cdmaTerm.mySerialPort2.Read(buffer)
+                readCount = cdmaModTool.mySerialPort2.Read(buffer)
             Else
                 For i As Integer = 0 To readCount - 1
                     responseList.Add(buffer(i))
@@ -339,7 +339,7 @@ Public Class DmPort
 
                 request = GetBufferWithCRC(request)
 
-                cdmaTerm.dispatchQ.addCommandToQ(New Command(request, "Ram Read i: " + i.ToString + "j: " + j.ToString))
+                cdmaModTool.dispatchQ.addCommandToQ(New Command(request, "Ram Read i: " + i.ToString + "j: " + j.ToString))
                 '' Dim response = WriteRead(New Byte() {4, Convert.ToByte(start And &HFF), Convert.ToByte((start And &HFF00) >> 8), Convert.ToByte((start And &HFF0000) >> 16), Convert.ToByte((start And &HFF000000UI) >> 24), 4, _
                 '' 0})
 
@@ -378,7 +378,7 @@ Public Class DmPort
         While current <= endAdr
 
             Dim request As New List(Of Byte)
-            Dim addressBs As Byte() = cdmaTerm.String_To_Bytes(current.ToString("x8"))
+            Dim addressBs As Byte() = cdmaModTool.String_To_Bytes(current.ToString("x8"))
             request.Add(addressBs(3))
             request.Add(addressBs(2))
             request.Add(addressBs(1))
@@ -388,7 +388,7 @@ Public Class DmPort
             request.Add(&H10)
             request.Add(0)
 
-            cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_PEEKB_F, request.ToArray, ("DIAG_PEEKB_F: " + current.ToString("x8").ToUpper)))
+            cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_PEEKB_F, request.ToArray, ("DIAG_PEEKB_F: " + current.ToString("x8").ToUpper)))
 
 
             current = current + &H10000
@@ -414,7 +414,7 @@ Public Class DmPort
         While current <= endAdr
 
             Dim request As New List(Of Byte)
-            Dim addressBs As Byte() = cdmaTerm.String_To_Bytes(current.ToString("x8"))
+            Dim addressBs As Byte() = cdmaModTool.String_To_Bytes(current.ToString("x8"))
             request.Add(addressBs(3))
             request.Add(addressBs(2))
             request.Add(addressBs(1))
@@ -424,7 +424,7 @@ Public Class DmPort
             request.Add(&H10)
             request.Add(0)
 
-            cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_PEEKB_F, request.ToArray, ("DIAG_PEEKB_F: " + current.ToString("x8"))))
+            cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_PEEKB_F, request.ToArray, ("DIAG_PEEKB_F: " + current.ToString("x8"))))
 
 
             current = current + &H10

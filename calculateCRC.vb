@@ -79,7 +79,7 @@ Public Class calculateCRC
         ''Dim test6() As Byte = {&H5B, &H16}
 
         ''TODO test code nt32 vs i nt64
-        Dim theValueOfTheArray As Int64 = Val("&H" + cdmaTerm.biznytesToStrizings(inByte))
+        Dim theValueOfTheArray As Int64 = Val("&H" + cdmaModTool.biznytesToStrizings(inByte))
         Dim a As Boolean = True
         Dim workingWitBytes() As Byte = BitConverter.GetBytes((a Xor (theValueOfTheArray)))
         Dim dosBytes(1) As Byte
@@ -96,7 +96,7 @@ Public Class calculateCRC
 
         Try
             Dim buildABearBuildAString As String = ""
-            Dim buildABearStartingString As String = cdmaTerm.biznytesToStrizings(inByteArray)
+            Dim buildABearStartingString As String = cdmaModTool.biznytesToStrizings(inByteArray)
 
 
             ''TODO random test/ try and fix crc
@@ -113,7 +113,7 @@ Public Class calculateCRC
 
 
             '' Return FLiPpeDbytaArray
-            Return cdmaTerm.String_To_Bytes(buildABearBuildAString)
+            Return cdmaModTool.String_To_Bytes(buildABearBuildAString)
 
         Catch
             MessageBox.Show("calculateCRC.FLiPallBytesInByteArray error")

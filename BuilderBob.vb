@@ -42,9 +42,9 @@ Public Class BuilderBob
     Private Function attachACrc(ByVal command() As Byte) As Byte()
         ''also fixed length
         Dim ultraStageThree As Byte() = {&H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0, &H0}
-        Dim commandsCrc As Byte() = cdmaTerm.gimmeCRC_AsByte_FromByte(command)
+        Dim commandsCrc As Byte() = cdmaModTool.gimmeCRC_AsByte_FromByte(command)
 
-        cdmaTerm.empty_cmd_136.CopyTo(ultraStageThree, 0)
+        cdmaModTool.empty_cmd_136.CopyTo(ultraStageThree, 0)
 
         command.CopyTo(ultraStageThree, 0)
 
@@ -68,7 +68,7 @@ Public Class BuilderBob
         For i = 0 To n
             s += "00"
         Next
-        Return cdmaTerm.String_To_Bytes(s)
+        Return cdmaModTool.String_To_Bytes(s)
     End Function
 
 

@@ -40,7 +40,7 @@ Imports cdmaTerm.Qcdm.Cmd
 Imports cdmaTerm.Qcdm
 
 
-Public Class cdmaTerm
+Public Class cdmaModTool
 
     ''im WithEvents mySerialPort As SerialPort = New SerialPort
     Friend dispatchQ As dispatchQmanager = New dispatchQmanager
@@ -2943,4 +2943,7 @@ ends:
         Return myModel
     End Function
 
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class

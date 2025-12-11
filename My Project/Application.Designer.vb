@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.cdmaTerm.cdmaTerm
+            Me.MainForm = Global.cdmaTerm.cdmaModTool
         End Sub
     End Class
 End Namespace

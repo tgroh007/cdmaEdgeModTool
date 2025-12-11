@@ -18,11 +18,11 @@
             Dim nvItemNumberPart2 As String
 
             If c.bytesRxd(0) = &H14 Then
-                nvItemNumberPart1 = cdmaTerm.biznytesToStrizings(c.bytesToTx).Substring(4, 2)
-                nvItemNumberPart2 = cdmaTerm.biznytesToStrizings(c.bytesToTx).Substring(2, 2)
+                nvItemNumberPart1 = cdmaModTool.biznytesToStrizings(c.bytesToTx).Substring(4, 2)
+                nvItemNumberPart2 = cdmaModTool.biznytesToStrizings(c.bytesToTx).Substring(2, 2)
             Else
-                nvItemNumberPart1 = cdmaTerm.biznytesToStrizings(c.bytesRxd).Substring(4, 2)
-                nvItemNumberPart2 = cdmaTerm.biznytesToStrizings(c.bytesRxd).Substring(2, 2)
+                nvItemNumberPart1 = cdmaModTool.biznytesToStrizings(c.bytesRxd).Substring(4, 2)
+                nvItemNumberPart2 = cdmaModTool.biznytesToStrizings(c.bytesRxd).Substring(2, 2)
             End If
 
             Dim nvItemNumberS As String = nvItemNumberPart1 + nvItemNumberPart2
@@ -50,7 +50,7 @@
             If ItemStatus = status.Ok Then
 
 
-                ItemData = cdmaTerm.biznytesToStrizings(c.bytesRxd).Substring(6, 256)
+                ItemData = cdmaModTool.biznytesToStrizings(c.bytesRxd).Substring(6, 256)
 
             End If
         Catch ex As Exception

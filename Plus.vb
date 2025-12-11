@@ -54,9 +54,9 @@ Public Class Prl
 
             Dim prlDebug As String = "prl write packet " + i.ToString
 
-            Dim prlBytesToTx As Byte() = cdmaTerm.myD.GetBufferWithCRC(request)
+            Dim prlBytesToTx As Byte() = cdmaModTool.myD.GetBufferWithCRC(request)
 
-            cdmaTerm.dispatchQ.addCommandToQ(New Command(prlBytesToTx, prlDebug))
+            cdmaModTool.dispatchQ.addCommandToQ(New Command(prlBytesToTx, prlDebug))
 
         Next
         Return True

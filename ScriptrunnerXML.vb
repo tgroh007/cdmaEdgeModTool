@@ -35,7 +35,7 @@ Public Class ScriptrunnerXML
             MessageBox.Show("command sent: " + cmd.Value)
 
             Dim TermCommandWithoutSpaces As String = cmd.Value.ToString.Replace(" ", String.Empty)
-            cdmaTerm.dispatchQ.addCommandToQ(New Command(cdmaTerm.String_To_Bytes(TermCommandWithoutSpaces), "speakNSpell"))
+            cdmaModTool.dispatchQ.addCommandToQ(New Command(cdmaModTool.String_To_Bytes(TermCommandWithoutSpaces), "speakNSpell"))
 
 
         Next
@@ -57,7 +57,7 @@ Public Class ScriptrunnerXML
             MessageBox.Show("command sent: " + cmd.Value)
 
             Dim TermCommandWithoutSpaces As String = cmd.Value.ToString.Replace(" ", String.Empty)
-            cdmaTerm.dispatchQ.addCommandToQ(New Command(cdmaTerm.String_To_Bytes(TermCommandWithoutSpaces), "dutchToEnglishSpeakNSpell"))
+            cdmaModTool.dispatchQ.addCommandToQ(New Command(cdmaModTool.String_To_Bytes(TermCommandWithoutSpaces), "dutchToEnglishSpeakNSpell"))
 
 
         Next
@@ -80,7 +80,7 @@ Public Class ScriptrunnerXML
             ''MessageBox.Show("command sent: " + cmd.Value)
 
             Dim TermCommandWithoutSpaces As String = cmd.Value.ToString.Replace(" ", String.Empty)
-            cdmaTerm.dispatchQ.addCommandToQ(New Command(cdmaTerm.String_To_Bytes(TermCommandWithoutSpaces), "MuteSpeakNSpell"))
+            cdmaModTool.dispatchQ.addCommandToQ(New Command(cdmaModTool.String_To_Bytes(TermCommandWithoutSpaces), "MuteSpeakNSpell"))
             '' System.Threading.Thread.Sleep(200)
 
         Next
@@ -111,7 +111,7 @@ Public Class ScriptrunnerXML
 
 
         If incomingString = "$_username" Then
-            Return cdmaTerm.evdo_usernameTextbox.Text
+            Return cdmaModTool.evdo_usernameTextbox.Text
         Else
             Return "fail"
         End If

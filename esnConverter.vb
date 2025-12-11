@@ -29,46 +29,46 @@ Public Class esnConverter
 
         Select Case ChecaSerie(serie)
             Case 0
-                cdmaTerm.ResultsListBox.Items.Add("Invalid MEID/ESN")
+                cdmaModTool.ResultsListBox.Items.Add("Invalid MEID/ESN")
                 Exit Select
             Case 1
-                cdmaTerm.ResultsListBox.Items.Add("MEID/ESN Hexadecimal")
-                cdmaTerm.ResultsListBox.Items.Add(" ")
-                cdmaTerm.ResultsListBox.Items.Add("MEID/ESN Decimal: ")
-                cdmaTerm.ResultsListBox.Items.Add(Convierte(1, serie))
+                cdmaModTool.ResultsListBox.Items.Add("MEID/ESN Hexadecimal")
+                cdmaModTool.ResultsListBox.Items.Add(" ")
+                cdmaModTool.ResultsListBox.Items.Add("MEID/ESN Decimal: ")
+                cdmaModTool.ResultsListBox.Items.Add(Convierte(1, serie))
 
                 Exit Select
             Case 2
 
-                cdmaTerm.ResultsListBox.Items.Add("MEID/ESN Decimal")
-                cdmaTerm.ResultsListBox.Items.Add(" ")
-                cdmaTerm.ResultsListBox.Items.Add("MEID/ESN Hexadecimal: ")
-                cdmaTerm.ResultsListBox.Items.Add(Convierte(2, serie))
+                cdmaModTool.ResultsListBox.Items.Add("MEID/ESN Decimal")
+                cdmaModTool.ResultsListBox.Items.Add(" ")
+                cdmaModTool.ResultsListBox.Items.Add("MEID/ESN Hexadecimal: ")
+                cdmaModTool.ResultsListBox.Items.Add(Convierte(2, serie))
                 Exit Select
             Case 3
 
-                cdmaTerm.ResultsListBox.Items.Add("Meid Hexadecimal")
-                cdmaTerm.ResultsListBox.Items.Add(" ")
-                cdmaTerm.ResultsListBox.Items.Add(("Meid Decimal: "))
-                cdmaTerm.ResultsListBox.Items.Add(Convierte(3, serie))
-                cdmaTerm.ResultsListBox.Items.Add(("pESN Hexadecimal: "))
-                cdmaTerm.ResultsListBox.Items.Add("80" & pesn(meidh2byte(serie)))
-                cdmaTerm.ResultsListBox.Items.Add(("pESN Decimal: "))
-                cdmaTerm.ResultsListBox.Items.Add(Convierte(1, ("80" & pesn(meidh2byte(serie)))))
+                cdmaModTool.ResultsListBox.Items.Add("Meid Hexadecimal")
+                cdmaModTool.ResultsListBox.Items.Add(" ")
+                cdmaModTool.ResultsListBox.Items.Add(("Meid Decimal: "))
+                cdmaModTool.ResultsListBox.Items.Add(Convierte(3, serie))
+                cdmaModTool.ResultsListBox.Items.Add(("pESN Hexadecimal: "))
+                cdmaModTool.ResultsListBox.Items.Add("80" & pesn(meidh2byte(serie)))
+                cdmaModTool.ResultsListBox.Items.Add(("pESN Decimal: "))
+                cdmaModTool.ResultsListBox.Items.Add(Convierte(1, ("80" & pesn(meidh2byte(serie)))))
                 Exit Select
             Case 4
 
-                cdmaTerm.ResultsListBox.Items.Add("Meid Decimal")
-                cdmaTerm.ResultsListBox.Items.Add(" ")
-                cdmaTerm.ResultsListBox.Items.Add(("Meid Hexadecimal: "))
-                cdmaTerm.ResultsListBox.Items.Add(Convierte(4, serie))
-                cdmaTerm.ResultsListBox.Items.Add(("pESN Hexadecimal:"))
-                cdmaTerm.ResultsListBox.Items.Add("80" & pesn(meidh2byte(Convierte(4, serie))))
-                cdmaTerm.ResultsListBox.Items.Add(("pESN Decimal: "))
-                cdmaTerm.ResultsListBox.Items.Add(Convierte(1, ("80" & pesn(meidh2byte(Convierte(4, serie))))))
+                cdmaModTool.ResultsListBox.Items.Add("Meid Decimal")
+                cdmaModTool.ResultsListBox.Items.Add(" ")
+                cdmaModTool.ResultsListBox.Items.Add(("Meid Hexadecimal: "))
+                cdmaModTool.ResultsListBox.Items.Add(Convierte(4, serie))
+                cdmaModTool.ResultsListBox.Items.Add(("pESN Hexadecimal:"))
+                cdmaModTool.ResultsListBox.Items.Add("80" & pesn(meidh2byte(Convierte(4, serie))))
+                cdmaModTool.ResultsListBox.Items.Add(("pESN Decimal: "))
+                cdmaModTool.ResultsListBox.Items.Add(Convierte(1, ("80" & pesn(meidh2byte(Convierte(4, serie))))))
                 Exit Select
             Case Else
-                cdmaTerm.ResultsListBox.Items.Add("Invalid MEID/ESN")
+                cdmaModTool.ResultsListBox.Items.Add("Invalid MEID/ESN")
                 Exit Select
         End Select
     End Sub

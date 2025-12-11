@@ -80,81 +80,81 @@ Public Class SamsungFullFlashing
     Public Sub full_flash_u350()
 
         ''setup and connect
-        cdmaTerm.scanAndListComs()
-        cdmaTerm.connectSub()
+        cdmaModTool.scanAndListComs()
+        cdmaModTool.connectSub()
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(cdmaTerm.modeOfflineD, ""))
-        cdmaTerm.dispatchQ.executeCommandQ()
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(cdmaModTool.modeOfflineD, ""))
+        cdmaModTool.dispatchQ.executeCommandQ()
         Threading.Thread.Sleep(250)
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(cdmaTerm.send16digitSchU350, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(cdmaModTool.send16digitSchU350, ""))
 
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(cdmaTerm.writeSPC_DefMethod000000, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(cdmaModTool.writeSPC_DefMethod000000, ""))
 
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(cdmaTerm.sendSPC_DefMethod000000, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(cdmaModTool.sendSPC_DefMethod000000, ""))
 
-        cdmaTerm.sendPRL(cdmaTerm.selectPRLComboBox.Text)
+        cdmaModTool.sendPRL(cdmaModTool.selectPRLComboBox.Text)
 
 
 
 
         ''round 1
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_1, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_1, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_user_1_264, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_user_1_264, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_user_2_264, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_user_2_264, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_2, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_2, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_user_3_264, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_user_3_264, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_mms_server_1, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_mms_server_1, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_servlets_1, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_servlets_1, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_upload_address_1, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_upload_address_1, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_user_4_34, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_user_4_34, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_3, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_3, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_user_5_34, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_user_5_34, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_4, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_4, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_5, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_pass_5, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_proxy_1, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_proxy_1, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_proxy_2, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_proxy_2, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_homepage, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_homepage, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_uaprof, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_uaprof, ""))
 
 
         ''begin u350 full flash test round 2
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_1, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_1, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_2, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_2, ""))
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_3, ""))
-
-
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_4, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_3, ""))
 
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_5, ""))
-
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_6, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_4, ""))
 
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_8, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_5, ""))
+
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_6, ""))
 
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(cdmaTerm.modeReset, ""))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(samsung_u350_r2_8, ""))
+
+
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(cdmaModTool.modeReset, ""))
 
         MessageBox.Show("one small loop for man, one giant leap for electronic kind")
     End Sub

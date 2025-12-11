@@ -32,7 +32,7 @@ Public Class NvEditor
 
 
         Dim nvItemList As String() = nvEditorItemListTxtbox.Text.TrimEnd(" ").Replace(",", "").Split(" ")
-        cdmaTerm.ReadNvItemList(nvItemList)
+        cdmaModTool.ReadNvItemList(nvItemList)
 
 
         ''  Dim myData As DataSet
@@ -41,7 +41,7 @@ Public Class NvEditor
         NvScriptMode = False
 
 
-        cdmaTerm.ToolStripStatusLabel1.Text = "NV Read Done"
+        cdmaModTool.ToolStripStatusLabel1.Text = "NV Read Done"
     End Sub
 
     Private Sub LoadNvEditor()
@@ -62,13 +62,13 @@ Public Class NvEditor
         '' DataGridView1.Columns.Add("item data(ascii)", "item data(ascii)")
 
 
-        For Each c As Command In cdmaTerm.nvReadQ.mySynqdQ
+        For Each c As Command In cdmaModTool.nvReadQ.mySynqdQ
 
             Dim loopNvItem As New NvItem(c)
 
             Dim loopItemDataAscii As String = ""
             If loopNvItem.getItemData.Replace("00", "").Length > 1 Then
-                loopItemDataAscii = Encoding.ASCII.GetString(cdmaTerm.String_To_Bytes(loopNvItem.getItemData.Replace("00", "")))
+                loopItemDataAscii = Encoding.ASCII.GetString(cdmaModTool.String_To_Bytes(loopNvItem.getItemData.Replace("00", "")))
 
             End If
 
@@ -312,7 +312,7 @@ Public Class NvEditor
 
     Private Sub WriteNvFromDG()
         Try
-            cdmaTerm.dispatchQ.clearCommandQ()
+            cdmaModTool.dispatchQ.clearCommandQ()
 
             ''Add the actual nv items and a comment with item number
             For Each r As DataGridViewRow In DataGridView1.Rows
@@ -325,7 +325,7 @@ Public Class NvEditor
 
                     If r.Cells("write type").Value = "data" Then
                         ''write nv data as byte[]
-                        dataPacket.AddRange(cdmaTerm.String_To_Bytes(r.Cells("item data").Value))
+                        dataPacket.AddRange(cdmaModTool.String_To_Bytes(r.Cells("item data").Value))
                         ''  writer.WriteAttributeString("valueS", r.Cells("value").Value)
 
                     ElseIf r.Cells("write type").Value = "data (ascii)" Then
@@ -336,13 +336,13 @@ Public Class NvEditor
                     End If
                     ''Public Sub New(ByVal qcdm As Qcdm.Cmd, ByVal nv As Integer, ByVal nvItemData As Byte(), ByVal debuggingTextIn As String)
 
-                    cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_NV_WRITE_F, currentItemNumberI, dataPacket.ToArray, "DG NV Write item Num: " + currentItemNumberI.ToString))
+                    cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_NV_WRITE_F, currentItemNumberI, dataPacket.ToArray, "DG NV Write item Num: " + currentItemNumberI.ToString))
 
                 End If
 
             Next
 
-            cdmaTerm.dispatchQ.executeCommandQ()
+            cdmaModTool.dispatchQ.executeCommandQ()
 
         Catch ex As Exception
             MessageBox.Show("Data Grid Nv Write Err (try nv write mode): " + ex.ToString)

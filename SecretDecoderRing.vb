@@ -39,7 +39,7 @@ Public Class SecretDecoderRing
 
 
             While timeoutcounter <= 5
-                If cdmaTerm.newCommandRxd = False Then
+                If cdmaModTool.newCommandRxd = False Then
                     System.Threading.Thread.Sleep(150)
                 End If
 
@@ -74,13 +74,13 @@ Public Class SecretDecoderRing
 
             Else
                 ''do nothing?
-                cdmaTerm.logAllBox.AppendText("damn decoder ring: thing fell apart?")
+                cdmaModTool.logAllBox.AppendText("damn decoder ring: thing fell apart?")
             End If
         Catch
             MessageBox.Show("damn decoder ring: gen err")
             Return False
         Finally
-            cdmaTerm.newCommandRxd = False
+            cdmaModTool.newCommandRxd = False
         End Try
         Return True
     End Function
@@ -119,13 +119,13 @@ Public Class SecretDecoderRing
                     ''hm.. random memory leak rofl
                     '' should add test or clear if dooing nv read?
                     ''testing for nv read cdma ws style
-                    cdmaTerm.nvReadQ.addCommandToQ(cmd)
+                    cdmaModTool.nvReadQ.addCommandToQ(cmd)
                 Case Qcdm.Cmd.DIAG_PEEKB_F
                     ''  decode_DIAG_PEEKB_F(cmd)
 
-                    If cdmaTerm.ReadingRamToFile Then
+                    If cdmaModTool.ReadingRamToFile Then
 
-                        cdmaTerm.RamReadQ.addCommandToQ(cmd)
+                        cdmaModTool.RamReadQ.addCommandToQ(cmd)
                     End If
 
 
@@ -235,7 +235,7 @@ Public Class SecretDecoderRing
         Try
 
             '' Dim meidFromPacket As String = cdmaTerm.AtReturnCmdBox.Text
-            Dim meidFromPacket As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+            Dim meidFromPacket As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
 
 
             ''todo uh. this doesnt seem to work? wtf?
@@ -261,16 +261,16 @@ Public Class SecretDecoderRing
 
             Else
                 'MessageBox.Show("meid found")
-                cdmaTerm.meidExtractedFromPacketTxtbox.Text = thisIsTheMeid
+                cdmaModTool.meidExtractedFromPacketTxtbox.Text = thisIsTheMeid
             End If
 
 
         Catch
             MessageBox.Show("cant find meid 2")
         Finally
-            cdmaTerm.ResultsListBox.Items.Clear()
+            cdmaModTool.ResultsListBox.Items.Clear()
             Dim c As New esnConverter
-            c.OnMeidConversionSub(cdmaTerm.meidExtractedFromPacketTxtbox.Text.ToString)
+            c.OnMeidConversionSub(cdmaModTool.meidExtractedFromPacketTxtbox.Text.ToString)
 
         End Try
 
@@ -282,7 +282,7 @@ Public Class SecretDecoderRing
 
             ''Dim spcFromPacket As String = cdmaTerm.AtReturnCmdBox.Text
 
-            Dim spcFromPacket As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+            Dim spcFromPacket As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
 
             Dim thisIsTheSPC As String = ""
 
@@ -295,7 +295,7 @@ Public Class SecretDecoderRing
             '    MessageBox.Show("cant find meid 1")
 
             'Else
-            cdmaTerm.SPCTextbox.Text = thisIsTheSPC
+            cdmaModTool.SPCTextbox.Text = thisIsTheSPC
             ''End If
 
 
@@ -316,7 +316,7 @@ Public Class SecretDecoderRing
 
 
                 '' Dim spcFromPacket As String = cdmaTerm.AtReturnCmdBox.Text
-                Dim spcFromPacket As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+                Dim spcFromPacket As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
 
 
 
@@ -331,7 +331,7 @@ Public Class SecretDecoderRing
                 '    MessageBox.Show("cant find meid 1")
 
                 'Else
-                cdmaTerm.SPCTextbox.Text = thisIsTheSPC
+                cdmaModTool.SPCTextbox.Text = thisIsTheSPC
                 ''End If
 
             End If
@@ -349,7 +349,7 @@ Public Class SecretDecoderRing
         Try
 
             ''Dim stringFromPacket As String = cdmaTerm.AtReturnCmdBox.Text
-            Dim stringFromPacket As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+            Dim stringFromPacket As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
 
             Dim thisIsTheDecodedString As String = ""
 
@@ -361,7 +361,7 @@ Public Class SecretDecoderRing
 
 
 
-            cdmaTerm.readESNTextBox.Text = thisIsTheDecodedString
+            cdmaModTool.readESNTextBox.Text = thisIsTheDecodedString
 
 
 
@@ -369,9 +369,9 @@ Public Class SecretDecoderRing
             MessageBox.Show("damn decoder ring: cant get decoded esn")
 
         Finally
-            cdmaTerm.ResultsListBox.Items.Clear()
+            cdmaModTool.ResultsListBox.Items.Clear()
             Dim c As New esnConverter
-            c.OnMeidConversionSub(cdmaTerm.readESNTextBox.Text.ToString)
+            c.OnMeidConversionSub(cdmaModTool.readESNTextBox.Text.ToString)
 
         End Try
     End Sub
@@ -383,7 +383,7 @@ Public Class SecretDecoderRing
         Try
 
             ''Dim stringFromPacket As String = cdmaTerm.AtReturnCmdBox.Text
-            Dim stringFromPacket As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+            Dim stringFromPacket As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
 
             Dim thisIsTheDecodedString As String = ""
 
@@ -393,7 +393,7 @@ Public Class SecretDecoderRing
 
 
 
-            cdmaTerm.readUserLockTextbox.Text = thisIsTheDecodedString
+            cdmaModTool.readUserLockTextbox.Text = thisIsTheDecodedString
 
 
 
@@ -408,7 +408,7 @@ Public Class SecretDecoderRing
         Try
 
             ''Dim stringFromPacket As String = cdmaTerm.AtReturnCmdBox.Text
-            Dim stringFromPacket As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+            Dim stringFromPacket As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
 
             Dim thisIsTheDecodedString As String = ""
 
@@ -419,8 +419,8 @@ Public Class SecretDecoderRing
             stringFromPacket(21) + stringFromPacket(23) & _
             stringFromPacket(25) + stringFromPacket(27)
 
-            Dim buildFullMin As String = cdmaTerm.MIN2RawTxtbox.Text + thisIsTheDecodedString
-            cdmaTerm.MIN2RawTxtbox.Text = buildFullMin
+            Dim buildFullMin As String = cdmaModTool.MIN2RawTxtbox.Text + thisIsTheDecodedString
+            cdmaModTool.MIN2RawTxtbox.Text = buildFullMin
 
 
 
@@ -435,7 +435,7 @@ Public Class SecretDecoderRing
         '' Try
 
         ''Dim stringFromPacket As String = cdmaTerm.AtReturnCmdBox.Text
-        Dim stringFromPacket As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+        Dim stringFromPacket As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
 
         Dim thisIsTheDecodedString As String = ""
 
@@ -462,7 +462,7 @@ Public Class SecretDecoderRing
         ''? string formatter method..?
         ''sprintf_s(buff, 0x30, "%03d %03d %d %03d",min2,min1a,min1b,min1c);  // result
 
-        cdmaTerm.nam0MDNTextbox.Text = (min2.ToString + min1a.ToString + min1b.ToString + min1c.ToString)
+        cdmaModTool.nam0MDNTextbox.Text = (min2.ToString + min1a.ToString + min1b.ToString + min1c.ToString)
 
         '' cdmaTerm.nam0MDNTextbox.Text = (min2) Mod (&H3D).ToString + min1a Mod (&H3D).ToString + min1b Mod (&HD).ToString + min1c Mod (&H3D).ToString
 
@@ -477,7 +477,7 @@ Public Class SecretDecoderRing
         Try
 
             ''Dim stringFromPacket As String = cdmaTerm.AtReturnCmdBox.Text
-            Dim stringFromPacket As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+            Dim stringFromPacket As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
 
             Dim thisIsTheDecodedString As String = ""
 
@@ -488,7 +488,7 @@ Public Class SecretDecoderRing
             stringFromPacket(21) + stringFromPacket(23) & _
             stringFromPacket(25) + stringFromPacket(27)
 
-            cdmaTerm.nam0MDNTextbox.Text = thisIsTheDecodedString
+            cdmaModTool.nam0MDNTextbox.Text = thisIsTheDecodedString
 
 
 
@@ -507,10 +507,10 @@ Public Class SecretDecoderRing
     Private Sub decode_NV_PPP_USER_ID_I(ByVal bytesRxd As Byte())
         Try
             Dim thisIsTheDecodedString As String = getAsciiStrings(bytesRxd)
-            cdmaTerm.txtBoxNV_PPP_USER_ID_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.txtBoxNV_PPP_USER_ID_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
 
             ''set the display to the first username and pass
-            cdmaTerm.evdo_usernameTextbox.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.evdo_usernameTextbox.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
 
 
         Catch
@@ -522,10 +522,10 @@ Public Class SecretDecoderRing
     Private Sub decode_NV_PPP_PASSWORD_I(ByVal bytesRxd As Byte())
         Try
             Dim thisIsTheDecodedString As String = getAsciiStrings(bytesRxd)
-            cdmaTerm.txtBoxNV_PPP_PASSWORD_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.txtBoxNV_PPP_PASSWORD_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
 
             ''set the display to the first username and pass
-            cdmaTerm.evdo_passwordTextbox.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.evdo_passwordTextbox.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
 
         Catch
             MessageBox.Show("damn decoder ring: decode_NV_PPP_PASSWORD_I")
@@ -536,7 +536,7 @@ Public Class SecretDecoderRing
     Private Sub decode_NV_PAP_USER_ID_I(ByVal bytesRxd As Byte())
         Try
             Dim thisIsTheDecodedString As String = getAsciiStrings(bytesRxd)
-            cdmaTerm.txtBoxNV_PAP_USER_ID_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.txtBoxNV_PAP_USER_ID_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
         Catch
             MessageBox.Show("damn decoder ring: decode_NV_PAP_USER_ID_I")
 
@@ -546,7 +546,7 @@ Public Class SecretDecoderRing
     Private Sub decode_NV_PAP_PASSWORD_I(ByVal bytesRxd As Byte())
         Try
             Dim thisIsTheDecodedString As String = getAsciiStrings(bytesRxd)
-            cdmaTerm.txtBoxNV_PAP_PASSWORD_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.txtBoxNV_PAP_PASSWORD_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
         Catch
             MessageBox.Show("damn decoder ring: decode_NV_PAP_PASSWORD_I")
 
@@ -556,7 +556,7 @@ Public Class SecretDecoderRing
     Private Sub decode_NV_HDR_AN_AUTH_USER_ID_LONG(ByVal bytesRxd As Byte())
         Try
             Dim thisIsTheDecodedString As String = getAsciiStrings(bytesRxd)
-            cdmaTerm.txtBoxNV_HDR_AN_AUTH_USER_ID_LONG.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.txtBoxNV_HDR_AN_AUTH_USER_ID_LONG.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
         Catch
             MessageBox.Show("damn decoder ring:  decode_NV_HDR_AN_AUTH_USER_ID_LONG")
 
@@ -566,7 +566,7 @@ Public Class SecretDecoderRing
     Private Sub decode_NV_HDR_AN_AUTH_PASSWD_LONG(ByVal bytesRxd As Byte())
         Try
             Dim thisIsTheDecodedString As String = getAsciiStrings(bytesRxd)
-            cdmaTerm.txtBoxNV_HDR_AN_AUTH_PASSWD_LONG.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.txtBoxNV_HDR_AN_AUTH_PASSWD_LONG.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
         Catch
             MessageBox.Show("damn decoder ring:decode_NV_HDR_AN_AUTH_PASSWD_LONG")
 
@@ -576,7 +576,7 @@ Public Class SecretDecoderRing
     Private Sub decode_NV_HDR_AN_AUTH_NAI_I(ByVal bytesRxd As Byte())
         Try
             Dim thisIsTheDecodedString As String = getAsciiStrings(bytesRxd)
-            cdmaTerm.txtBoxNV_HDR_AN_AUTH_NAI_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.txtBoxNV_HDR_AN_AUTH_NAI_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
         Catch
             MessageBox.Show("damn decoder ring: decode_NV_RSVD_ITEM_579_I")
 
@@ -586,7 +586,7 @@ Public Class SecretDecoderRing
     Private Sub decode_NV_HDR_AN_AUTH_PASSWORD_I(ByVal bytesRxd As Byte())
         Try
             Dim thisIsTheDecodedString As String = getAsciiStrings(bytesRxd)
-            cdmaTerm.txtBoxNV_HDR_AN_AUTH_PASSWORD_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
+            cdmaModTool.txtBoxNV_HDR_AN_AUTH_PASSWORD_I.Text = trimFrontAndEndAscii(thisIsTheDecodedString)
         Catch
             MessageBox.Show("damn decoder ring: decode_NV_RSVD_ITEM_580_I")
 
@@ -608,7 +608,7 @@ Public Class SecretDecoderRing
     Public Function getAsciiStrings(ByVal bytes As Byte()) As String
 
 
-        Dim bString = cdmaTerm.biznytesToStrizings(bytes)
+        Dim bString = cdmaModTool.biznytesToStrizings(bytes)
 
         Try
 
@@ -665,7 +665,7 @@ Public Class SecretDecoderRing
         ''cdmaTerm.MIN1RawTxtbox.Text = cdmaTerm.biznytesToStrizings(New Byte() {cmd.bytesRxd(7), cmd.bytesRxd(6), cmd.bytesRxd(5), cmd.bytesRxd(4)})
 
         ''test to fix lg
-        cdmaTerm.MIN1RawTxtbox.Text = cdmaTerm.biznytesToStrizings(New Byte() {cmd.bytesRxd(11), cmd.bytesRxd(10), cmd.bytesRxd(9), cmd.bytesRxd(8)})
+        cdmaModTool.MIN1RawTxtbox.Text = cdmaModTool.biznytesToStrizings(New Byte() {cmd.bytesRxd(11), cmd.bytesRxd(10), cmd.bytesRxd(9), cmd.bytesRxd(8)})
 
 
         'Dim min1 As New Integer
@@ -696,7 +696,7 @@ Public Class SecretDecoderRing
         ''this worked samsung but not lg
         ''cdmaTerm.MIN2RawTxtbox.Text = cdmaTerm.biznytesToStrizings(New Byte() {cmd.bytesRxd(4), cmd.bytesRxd(4)})
 
-        cdmaTerm.MIN2RawTxtbox.Text = cdmaTerm.biznytesToStrizings(New Byte() {cmd.bytesRxd(7), cmd.bytesRxd(6)})
+        cdmaModTool.MIN2RawTxtbox.Text = cdmaModTool.biznytesToStrizings(New Byte() {cmd.bytesRxd(7), cmd.bytesRxd(6)})
     End Sub
 
     Public Function decode_NV_MIN1(ByVal min1 As String, ByVal min2 As String) As String
@@ -773,7 +773,7 @@ Public Class SecretDecoderRing
         ''01 mob+simple
         ''02 mobile
         Dim type As Integer = bytesRxd(3)
-        cdmaTerm.evdoModeCombo.SelectedIndex = type
+        cdmaModTool.evdoModeCombo.SelectedIndex = type
 
 
     End Sub
@@ -784,22 +784,22 @@ Public Class SecretDecoderRing
 
         ''cdmaTerm.BbRegIdTextbox.Text = Integer.Parse(bytesRxd(4).ToString + bytesRxd(3).ToString).ToString
         ''cdmaTerm.BbRegIdTextbox.Text = System.Convert.ToInt32((bytesRxd(4).ToString + bytesRxd(3).ToString), 16).ToString
-        cdmaTerm.BbRegIdTextbox.Text = System.Convert.ToInt32((bytesRxd(4).ToString("x2") + bytesRxd(3).ToString("x2")), 16).ToString
+        cdmaModTool.BbRegIdTextbox.Text = System.Convert.ToInt32((bytesRxd(4).ToString("x2") + bytesRxd(3).ToString("x2")), 16).ToString
 
 
 
     End Sub
 
     Private Sub decode_NV_HOME_SID_NID_I(ByVal bytesRxd As Byte())
-        cdmaTerm.SIDTextbox.Text = System.Convert.ToInt32((bytesRxd(5).ToString("x2") + bytesRxd(4).ToString("x2")), 16).ToString
-        cdmaTerm.NIDTextbox.Text = System.Convert.ToInt32((bytesRxd(7).ToString("x2") + bytesRxd(6).ToString("x2")), 16).ToString
+        cdmaModTool.SIDTextbox.Text = System.Convert.ToInt32((bytesRxd(5).ToString("x2") + bytesRxd(4).ToString("x2")), 16).ToString
+        cdmaModTool.NIDTextbox.Text = System.Convert.ToInt32((bytesRxd(7).ToString("x2") + bytesRxd(6).ToString("x2")), 16).ToString
 
 
     End Sub
 
     Private Sub decode_DIAG_PEEKB_F(ByVal cmd As Command)
         ''unused.. could add test to see if read is bad
-        If cdmaTerm.ReadingRamToFile Then
+        If cdmaModTool.ReadingRamToFile Then
             '' cdmaTerm.dispatchQ.SaveTextToFile()
         End If
 
@@ -807,20 +807,20 @@ Public Class SecretDecoderRing
 
     Private Sub decode_NV_NAM_LOCK_I(ByVal bytesRxd As Byte())
         If bytesRxd(4) = 0 Then
-            cdmaTerm.NamLockCheckbox.Checked = False
+            cdmaModTool.NamLockCheckbox.Checked = False
         ElseIf bytesRxd(4) = 1 Then
-            cdmaTerm.NamLockCheckbox.Checked = True
+            cdmaModTool.NamLockCheckbox.Checked = True
         End If
 
     End Sub
 
     Private Sub decode_NV_DS_MIP_NUM_PROF_I(ByVal bytesRxd As Byte())
 
-        cdmaTerm.NumberOfProfilesComboBox1.Text = bytesRxd(3).ToString
+        cdmaModTool.NumberOfProfilesComboBox1.Text = bytesRxd(3).ToString
 
     End Sub
     Private Sub decode_NV_DS_MIP_ENABLE_PROF_I(ByVal bytesRxd As Byte())
-        cdmaTerm.SelectedProfileCombo.Text = bytesRxd(3).ToString
+        cdmaModTool.SelectedProfileCombo.Text = bytesRxd(3).ToString
     End Sub
 
     Private Sub decodeSubsysItem(ByVal cmd As Command)
@@ -847,9 +847,9 @@ Public Class SecretDecoderRing
             'End If
 
 
-            Dim step1 As String = cdmaTerm.biznytesToStrizings(cmd.bytesRxd)
+            Dim step1 As String = cdmaModTool.biznytesToStrizings(cmd.bytesRxd)
             step1 = step1.Substring(80, step1.Length - 86)
-            Dim cleanedUp As String = getAsciiStrings(cdmaTerm.String_To_Bytes(step1))
+            Dim cleanedUp As String = getAsciiStrings(cdmaModTool.String_To_Bytes(step1))
 
             If (cleanedUp.Length > 1) And cmd.bytesRxd(16) = 1 Then
 
@@ -870,18 +870,18 @@ Public Class SecretDecoderRing
                 'End If
 
 
-                cdmaTerm.EfsQc.LastEfsWorked2 = True
+                cdmaModTool.EfsQc.LastEfsWorked2 = True
 
                 ''TODO: check for length begin index
             ElseIf (cleanedUp.Length > 1) Then
 
 
-                cdmaTerm.EfsQc.LastEfsWorked2 = True
+                cdmaModTool.EfsQc.LastEfsWorked2 = True
 
                 addToEfsTreeView(cleanedUp, "file")
             Else
                 ''uh..?
-                cdmaTerm.EfsQc.LastEfsWorked2 = False
+                cdmaModTool.EfsQc.LastEfsWorked2 = False
 
             End If
 
@@ -889,7 +889,7 @@ Public Class SecretDecoderRing
 
         If (cmd.bytesToTx(2) = Qcdm.SubsysStorage.DIAG_EFS2_READDIR) And (cmd.bytesRxd.Length < 40) Then
             ''TODO EFS STOP FIX
-            cdmaTerm.EfsQc.LastEfsWorked2 = False
+            cdmaModTool.EfsQc.LastEfsWorked2 = False
 
 
         End If
@@ -903,9 +903,9 @@ Public Class SecretDecoderRing
 
         If efsType = "folder" Then
 
-            cdmaTerm.FolderTreeView1.Nodes.Add(f)
+            cdmaModTool.FolderTreeView1.Nodes.Add(f)
         Else
-            cdmaTerm.FileTreeView2.Nodes.Add(f)
+            cdmaModTool.FileTreeView2.Nodes.Add(f)
 
             Return True
         End If

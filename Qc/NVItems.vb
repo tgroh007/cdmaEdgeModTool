@@ -1419,7 +1419,7 @@ Public Class NvItems
 
         ''MessageBox.Show("return hex revd/:" + returnHex)
 
-        Dim prefix As Byte() = cdmaTerm.String_To_Bytes("26" + returnHex)
+        Dim prefix As Byte() = cdmaModTool.String_To_Bytes("26" + returnHex)
         ''no se? test
         '' cdmaTerm. dispatchQ.addCommandToQ(New Command((bob.buildATerminalCommand(cdmaTerm.empty_cmd_133, prefix, bob.buildDataArray("0" + "")))
         ''
@@ -1434,7 +1434,7 @@ Public Class NvItems
         End While
 
         Dim calcCrc() As Byte
-        calcCrc = cdmaTerm.gimmeCRC_AsByte_FromByte(fullCommand.ToArray)
+        calcCrc = cdmaModTool.gimmeCRC_AsByte_FromByte(fullCommand.ToArray)
 
         fullCommand.Add(calcCrc(0))
 
@@ -1472,7 +1472,7 @@ Public Class NvItems
 
                 ''cdmaTerm.dispatchQ.addCommandToQ(readNVItem(i, debugString))
 
-                cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_NV_READ_F, i, New Byte() {}, debugString))
+                cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_NV_READ_F, i, New Byte() {}, debugString))
 
 
             Next
@@ -1569,7 +1569,7 @@ Public Class NvItems
         Dim enc As New ASCIIEncoding
 
 
-        Dim prefix As Byte() = cdmaTerm.String_To_Bytes("27" + fixNVItemNumber(item, 4) + (value))
+        Dim prefix As Byte() = cdmaModTool.String_To_Bytes("27" + fixNVItemNumber(item, 4) + (value))
         Dim tempQ As New dispatchQmanager
 
         '' MessageBox.Show(cdmaTerm.biznytesToStrizings(bob.buildATerminalCommand(cdmaTerm.empty_cmd_133, prefix, bob.buildDataArray("0" + "")))).ToString()
@@ -1580,7 +1580,7 @@ Public Class NvItems
         ''TODO: Error
         ''MessageBox.Show("wr nv" + cdmaTerm.biznytesToStrizings(bob.buildATerminalCommand(cdmaTerm.empty_cmd_133, prefix, bob.buildDataArray("0" + ""))))
 
-        tempQ.addCommandToQ(New Command(bob.buildATerminalCommand(cdmaTerm.empty_cmd_133, prefix, bob.buildDataArray("0" + "")), ("nv#")))
+        tempQ.addCommandToQ(New Command(bob.buildATerminalCommand(cdmaModTool.empty_cmd_133, prefix, bob.buildDataArray("0" + "")), ("nv#")))
 
         tempQ.executeCommandQ()
         Return True
@@ -1588,7 +1588,7 @@ Public Class NvItems
     End Function
 
     Public Function WriteNVItem(ByVal item As Integer, ByVal data As Byte()) As Boolean
-        WriteNVItem(item, cdmaTerm.biznytesToStrizings(data))
+        WriteNVItem(item, cdmaModTool.biznytesToStrizings(data))
         Return True
     End Function
     Dim oFile As System.IO.File

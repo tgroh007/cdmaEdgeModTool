@@ -56,10 +56,10 @@ Public Class dispatchQmanager
 
     ''Returns true if all commands execute
     Public Function executeCommandQ() As Boolean
-        cdmaTerm.ToolStripProgressBar1.Maximum = mySynqdQ.Count
-        cdmaTerm.ToolStripProgressBar1.Minimum = 0
-        cdmaTerm.ToolStripProgressBar1.Value = 0
-        If cdmaTerm.portIsOpen = False Then
+        cdmaModTool.ToolStripProgressBar1.Maximum = mySynqdQ.Count
+        cdmaModTool.ToolStripProgressBar1.Minimum = 0
+        cdmaModTool.ToolStripProgressBar1.Value = 0
+        If cdmaModTool.portIsOpen = False Then
             MessageBox.Show("Dispatch Queue Err: Port Not Open, Please Connect")
             silentInterruptCommandQ()
         Else
@@ -136,8 +136,8 @@ Public Class dispatchQmanager
                 ''TODO???
 
                 ''cdmaTerm.logAllBox += thisC.commandNameSent
-                cdmaTerm.logAllBox.AppendText(("-Q" + i.ToString + ": " + thisC.debuggingText & vbNewLine))
-                cdmaTerm.ToolStripProgressBar1.Value += 1
+                cdmaModTool.logAllBox.AppendText(("-Q" + i.ToString + ": " + thisC.debuggingText & vbNewLine))
+                cdmaModTool.ToolStripProgressBar1.Value += 1
 
             Next
 
@@ -337,11 +337,11 @@ Public Class dispatchQmanager
             Dim nvItemNumberPart2 As String
 
             If c.bytesRxd(0) = &H14 Then
-                nvItemNumberPart1 = cdmaTerm.biznytesToStrizings(c.bytesToTx).Substring(4, 2)
-                nvItemNumberPart2 = cdmaTerm.biznytesToStrizings(c.bytesToTx).Substring(2, 2)
+                nvItemNumberPart1 = cdmaModTool.biznytesToStrizings(c.bytesToTx).Substring(4, 2)
+                nvItemNumberPart2 = cdmaModTool.biznytesToStrizings(c.bytesToTx).Substring(2, 2)
             Else
-                nvItemNumberPart1 = cdmaTerm.biznytesToStrizings(c.bytesRxd).Substring(4, 2)
-                nvItemNumberPart2 = cdmaTerm.biznytesToStrizings(c.bytesRxd).Substring(2, 2)
+                nvItemNumberPart1 = cdmaModTool.biznytesToStrizings(c.bytesRxd).Substring(4, 2)
+                nvItemNumberPart2 = cdmaModTool.biznytesToStrizings(c.bytesRxd).Substring(2, 2)
             End If
 
 
@@ -373,7 +373,7 @@ Public Class dispatchQmanager
                 SaveTextToFile(vbCrLf, fileName)
             Else
 
-                Dim nvData As String = cdmaTerm.biznytesToStrizings(c.bytesRxd).Substring(6, 256)
+                Dim nvData As String = cdmaModTool.biznytesToStrizings(c.bytesRxd).Substring(6, 256)
                 ''3.5 dec length 5 hex length 
 
                 Dim itemString As String = decL.ToString("d5") + " (0x" + hexString + ")   -   OK"

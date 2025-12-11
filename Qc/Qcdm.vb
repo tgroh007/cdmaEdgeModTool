@@ -204,9 +204,9 @@ Public Class Qcdm
 
     Public Function ReadEfsFolderByName(ByVal folderName As String) As String
 
-        cdmaTerm.dispatchQ.clearCommandQ()
+        cdmaModTool.dispatchQ.clearCommandQ()
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, SubsysStorage.DIAG_EFS2_READ, New Byte() {&HE, &H0}, "Read EFS", "stupidfix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, SubsysStorage.DIAG_EFS2_READ, New Byte() {&HE, &H0}, "Read EFS", "stupidfix"))
 
 
         Dim openFolder As New List(Of Byte)
@@ -218,7 +218,7 @@ Public Class Qcdm
         openFolder.Add(&H0)
         ''}
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, openFolder.ToArray, "OPENDIR " + folderName, "stupidfix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, openFolder.ToArray, "OPENDIR " + folderName, "stupidfix"))
         Dim j As Integer = 1
 
         ''TODO: Increase max count to test and fix efs loop not stoping/arithmatic overflow exception
@@ -235,9 +235,9 @@ Public Class Qcdm
         ''cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_READDIR, &H0, &H1, &H0, &H0, &H0, i, &H0, &H0, &H0}, "READDIR", "stupidfix"))
         ''Next
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_CLOSEDIR, &H0, &H1, &H0, &H0, &H0}, "CLOSEDIR /", "stupidfix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_CLOSEDIR, &H0, &H1, &H0, &H0, &H0}, "CLOSEDIR /", "stupidfix"))
 
-        cdmaTerm.dispatchQ.executeCommandQ()
+        cdmaModTool.dispatchQ.executeCommandQ()
 
         Return New String("?")
 
@@ -245,10 +245,10 @@ Public Class Qcdm
 
     Public Function ReadEfsRoot() As String
 
-        cdmaTerm.dispatchQ.clearCommandQ()
+        cdmaModTool.dispatchQ.clearCommandQ()
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, SubsysStorage.DIAG_EFS2_READ, New Byte() {&HE, &H0}, "Read EFS", "stupidfix"))
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_OPENDIR, &H0, &H2F, &H0}, "OPENDIR /", "stupidfix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, SubsysStorage.DIAG_EFS2_READ, New Byte() {&HE, &H0}, "Read EFS", "stupidfix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_OPENDIR, &H0, &H2F, &H0}, "OPENDIR /", "stupidfix"))
         Dim j As Integer = 1
 
         ''TODO: Increase max count to test and fix efs loop not stoping/arithmatic overflow exception
@@ -264,9 +264,9 @@ Public Class Qcdm
         ''cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_READDIR, &H0, &H1, &H0, &H0, &H0, i, &H0, &H0, &H0}, "READDIR", "stupidfix"))
         ''Next
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_CLOSEDIR, &H0, &H1, &H0, &H0, &H0}, "CLOSEDIR /", "stupidfix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_CLOSEDIR, &H0, &H1, &H0, &H0, &H0}, "CLOSEDIR /", "stupidfix"))
 
-        cdmaTerm.dispatchQ.executeCommandQ()
+        cdmaModTool.dispatchQ.executeCommandQ()
 
         Return New String("?")
 
@@ -275,9 +275,9 @@ Public Class Qcdm
 
     Public Function ReadEfsDir(ByVal dir As Integer) As Boolean
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_READDIR, &H0, &H1, &H0, &H0, &H0, dir, &H0, &H0, &H0}, "READDIR", "stupidfix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, New Byte() {SubsysStorage.DIAG_EFS2_READDIR, &H0, &H1, &H0, &H0, &H0, dir, &H0, &H0, &H0}, "READDIR", "stupidfix"))
 
-        cdmaTerm.dispatchQ.executeCommandQ()
+        cdmaModTool.dispatchQ.executeCommandQ()
 
 
 
@@ -297,8 +297,8 @@ Public Class Qcdm
         Dim OpenForWrite As New List(Of Byte)
         OpenForWrite.AddRange(openEfsHeader)
 
-        If cdmaTerm.EfsPathTxtbox.Text <> "/" Then
-            fileName = cdmaTerm.EfsPathTxtbox.Text + "/" + fileName
+        If cdmaModTool.EfsPathTxtbox.Text <> "/" Then
+            fileName = cdmaModTool.EfsPathTxtbox.Text + "/" + fileName
         End If
 
         For Each c As Char In fileName
@@ -306,9 +306,9 @@ Public Class Qcdm
         Next
         OpenForWrite.Add(0)
 
-        cdmaTerm.dispatchQ.clearCommandQ()
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, SubsysCmd.STORAGE, OpenForWrite.ToArray, "OpenEfsForWrite", "StupidFix"))
-        cdmaTerm.dispatchQ.executeCommandQ()
+        cdmaModTool.dispatchQ.clearCommandQ()
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, SubsysCmd.STORAGE, OpenForWrite.ToArray, "OpenEfsForWrite", "StupidFix"))
+        cdmaModTool.dispatchQ.executeCommandQ()
 
     End Sub
 
@@ -319,7 +319,7 @@ Public Class Qcdm
 
         efsPacket.AddRange(writeHeader)
 
-        fileName = cdmaTerm.EfsPathTxtbox.Text + "/" + fileName
+        fileName = cdmaModTool.EfsPathTxtbox.Text + "/" + fileName
 
         For Each c As Char In fileName
             efsPacket.Add(System.Convert.ToUInt32(c))
@@ -328,20 +328,20 @@ Public Class Qcdm
 
         efsPacket.Add(&H0)
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, efsPacket.ToArray, "DeleteEFS", "stupidfix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, efsPacket.ToArray, "DeleteEFS", "stupidfix"))
 
         Dim EfsDirectory As New List(Of Byte)
         EfsDirectory.AddRange(New Byte() {&HB, 0, 0, 0, 0})
 
-        Dim efspathtxtcontents = cdmaTerm.EfsPathTxtbox.Text
+        Dim efspathtxtcontents = cdmaModTool.EfsPathTxtbox.Text
 
-        For Each c As Char In cdmaTerm.EfsPathTxtbox.Text
+        For Each c As Char In cdmaModTool.EfsPathTxtbox.Text
             EfsDirectory.Add(System.Convert.ToUInt32(c))
         Next
 
         EfsDirectory.Add(0)
 
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_FS_OP_F, EfsDirectory.ToArray, "EfsDirectory"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_FS_OP_F, EfsDirectory.ToArray, "EfsDirectory"))
     End Sub
 
     Dim EfsPacketLength As Integer = 527
@@ -399,8 +399,8 @@ Public Class Qcdm
             Dim efsPacket As New List(Of Byte)
             efsPacket.AddRange(writeHeader)
             Dim hexPacketNumber As String = CurrentPacket.ToString("x4")
-            efsPacket.AddRange(cdmaTerm.String_To_Bytes(hexPacketNumber.Substring(2, 2)))
-            efsPacket.AddRange(cdmaTerm.String_To_Bytes(hexPacketNumber.Substring(0, 2)))
+            efsPacket.AddRange(cdmaModTool.String_To_Bytes(hexPacketNumber.Substring(2, 2)))
+            efsPacket.AddRange(cdmaModTool.String_To_Bytes(hexPacketNumber.Substring(0, 2)))
             efsPacket.Add(&H0)
             efsPacket.Add(&H0)
 
@@ -424,14 +424,14 @@ Public Class Qcdm
             '00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
             Dim debugstring As String = "DIAG_EFS2_WRITE " + i.ToString
-            cdmaTerm.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, efsPacket.ToArray, debugstring, "stupidfix"))
+            cdmaModTool.dispatchQ.addCommandToQ(New Command(Qcdm.Cmd.DIAG_SUBSYS_CMD_F, &H13, efsPacket.ToArray, debugstring, "stupidfix"))
 
 
             CurrentPacket += 2
             CurrentOffset += EfsPacketMinusHeader
 
         Next
-        cdmaTerm.dispatchQ.addCommandToQ(New Command(Cmd.DIAG_SUBSYS_CMD_F, SubsysCmd.STORAGE, New Byte() {&H3, 0, 0, 0, 0, 0}, "DIAG_EFS2_CLOSE", "StupidFix"))
+        cdmaModTool.dispatchQ.addCommandToQ(New Command(Cmd.DIAG_SUBSYS_CMD_F, SubsysCmd.STORAGE, New Byte() {&H3, 0, 0, 0, 0, 0}, "DIAG_EFS2_CLOSE", "StupidFix"))
 
         Return True
 

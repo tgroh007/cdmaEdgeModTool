@@ -81,7 +81,7 @@ Public Class Command
         currentQcdm = qcdm
 
         Dim qcdmArray As Byte() = {Byte.Parse(qcdm)}
-        bytesToTx = cdmaTerm.myD.GetBufferWithCRC(qcdmArray)
+        bytesToTx = cdmaModTool.myD.GetBufferWithCRC(qcdmArray)
 
         '' Dim qcdmArrayCrc As Byte() = cdmaTerm.gimmeCRC_AsByte_FromByte(qcdmArray)
 
@@ -106,7 +106,7 @@ Public Class Command
         Next
 
         ''add crc
-        bytesToTx = cdmaTerm.myD.GetBufferWithCRC(packet.ToArray)
+        bytesToTx = cdmaModTool.myD.GetBufferWithCRC(packet.ToArray)
 
         debuggingText = debuggingTextIn + " / new crc2"
 
@@ -137,7 +137,7 @@ Public Class Command
         End While
 
 
-        bytesToTx = cdmaTerm.myD.GetBufferWithCRC(request.ToArray)
+        bytesToTx = cdmaModTool.myD.GetBufferWithCRC(request.ToArray)
 
         debuggingText = debuggingTextIn + " / new crc3"
 
@@ -167,7 +167,7 @@ Public Class Command
         End While
 
         ''new crc
-        bytesToTx = cdmaTerm.myD.GetBufferWithCRC(request.ToArray)
+        bytesToTx = cdmaModTool.myD.GetBufferWithCRC(request.ToArray)
 
         debuggingText = debuggingTextIn + " / new crc4"
 
@@ -189,7 +189,7 @@ Public Class Command
         Next
 
         ''new crc
-        bytesToTx = cdmaTerm.myD.GetBufferWithCRC(request.ToArray)
+        bytesToTx = cdmaModTool.myD.GetBufferWithCRC(request.ToArray)
 
         debuggingText = debuggingTextIn + " / new crc4"
 
@@ -200,17 +200,17 @@ Public Class Command
 
     '' Public fbld As New Font(cdmaTerm.logQBox.Font.FontFamily, cdmaTerm.logQBox.Font.Size + 1, FontStyle.Bold)
     '' Public fdef As New Font(cdmaTerm.logQBox.Font.FontFamily, cdmaTerm.logQBox.Font.Size, FontStyle.Regular)
-    Public fbld As New Font("Arial", cdmaTerm.logQBox.Font.Size + 2, FontStyle.Bold)
-    Public fdef As New Font("Arial", cdmaTerm.logQBox.Font.Size, FontStyle.Regular)
+    Public fbld As New Font("Arial", cdmaModTool.logQBox.Font.Size + 2, FontStyle.Bold)
+    Public fdef As New Font("Arial", cdmaModTool.logQBox.Font.Size, FontStyle.Regular)
 
     
 
 
     ''function to send a bite array returns tru if it works
     Public Function tx() As Boolean
-        If cdmaTerm.portIsOpen = False Then
+        If cdmaModTool.portIsOpen = False Then
             MessageBox.Show("Port not open err, please connect.")
-            cdmaTerm.dispatchQ.silentInterruptCommandQ()
+            cdmaModTool.dispatchQ.silentInterruptCommandQ()
         Else
             Try
                 Dim testSend As New DmPort
@@ -225,34 +225,34 @@ Public Class Command
                 ''untested fix for 7d/5e/5d return issue
                 ''
                 bytesRxd = testSend.unescapeReturnedBytes(bytesRxd)
-                cdmaTerm.logQBox.AppendText(vbNewLine + vbNewLine)
-                Dim nameStart As Integer = cdmaTerm.logQBox.TextLength
-                cdmaTerm.logQBox.AppendText(debuggingText)
-                Dim nameEnd As Integer = cdmaTerm.logQBox.TextLength
-                cdmaTerm.logQBox.[Select](nameStart, nameEnd - nameStart)
-                cdmaTerm.logQBox.SelectionFont = fbld
+                cdmaModTool.logQBox.AppendText(vbNewLine + vbNewLine)
+                Dim nameStart As Integer = cdmaModTool.logQBox.TextLength
+                cdmaModTool.logQBox.AppendText(debuggingText)
+                Dim nameEnd As Integer = cdmaModTool.logQBox.TextLength
+                cdmaModTool.logQBox.[Select](nameStart, nameEnd - nameStart)
+                cdmaModTool.logQBox.SelectionFont = fbld
 
 
-                Dim bytesStart As Integer = cdmaTerm.logQBox.TextLength
+                Dim bytesStart As Integer = cdmaModTool.logQBox.TextLength
 
-                Dim appendString As String = vbNewLine + "TX: " + vbNewLine + hexSpace(cdmaTerm.biznytesToStrizings(bytesToTx)) + vbNewLine + vbNewLine +
-                            "RX: " + vbNewLine + hexSpace(cdmaTerm.biznytesToStrizings(bytesRxd)) + vbNewLine
-                If cdmaTerm.IncludeAsciiInLogQChkbox.Checked Then
-                    appendString += vbNewLine + "RX(ascii): " + cdmaTerm.sdr.getAsciiStrings(bytesRxd) + vbNewLine + vbNewLine
+                Dim appendString As String = vbNewLine + "TX: " + vbNewLine + hexSpace(cdmaModTool.biznytesToStrizings(bytesToTx)) + vbNewLine + vbNewLine +
+                            "RX: " + vbNewLine + hexSpace(cdmaModTool.biznytesToStrizings(bytesRxd)) + vbNewLine
+                If cdmaModTool.IncludeAsciiInLogQChkbox.Checked Then
+                    appendString += vbNewLine + "RX(ascii): " + cdmaModTool.sdr.getAsciiStrings(bytesRxd) + vbNewLine + vbNewLine
                 Else
                     appendString += vbNewLine
                 End If
 
 
 
-                cdmaTerm.logQBox.AppendText(appendString)
+                cdmaModTool.logQBox.AppendText(appendString)
 
-                Dim bytesEnd As Integer = cdmaTerm.logQBox.TextLength
-                cdmaTerm.logQBox.[Select](bytesStart, bytesEnd - bytesStart)
-                cdmaTerm.logQBox.SelectionFont = fdef
+                Dim bytesEnd As Integer = cdmaModTool.logQBox.TextLength
+                cdmaModTool.logQBox.[Select](bytesStart, bytesEnd - bytesStart)
+                cdmaModTool.logQBox.SelectionFont = fdef
 
 
-                cdmaTerm.AtReturnCmdBox.Text = cdmaTerm.biznytesToStrizings(bytesRxd)
+                cdmaModTool.AtReturnCmdBox.Text = cdmaModTool.biznytesToStrizings(bytesRxd)
 
                 If bytesRxd.Count > 0 Then
                     Return True
@@ -260,7 +260,7 @@ Public Class Command
 
             Catch ex As Exception
                 MessageBox.Show("Command.tx err: " + ex.ToString)
-                cdmaTerm.dispatchQ.interruptCommandQ()
+                cdmaModTool.dispatchQ.interruptCommandQ()
             End Try
         End If
 

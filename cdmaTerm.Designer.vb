@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class cdmaTerm
+Partial Class cdmaModTool
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,9 +22,9 @@ Partial Class cdmaTerm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(cdmaTerm))
-        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("EFS Files")
-        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("/")
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(cdmaModTool))
+        Dim TreeNode27 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("EFS Files")
+        Dim TreeNode28 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("/")
         Me.ATSendButton = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TermSendBox = New System.Windows.Forms.TextBox()
@@ -347,7 +347,7 @@ Partial Class cdmaTerm
         'ATSendButton
         '
         Me.ATSendButton.Location = New System.Drawing.Point(556, 25)
-        Me.ATSendButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ATSendButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ATSendButton.Name = "ATSendButton"
         Me.ATSendButton.Size = New System.Drawing.Size(100, 28)
         Me.ATSendButton.TabIndex = 0
@@ -359,9 +359,9 @@ Partial Class cdmaTerm
         Me.GroupBox1.Controls.Add(Me.TermSendBox)
         Me.GroupBox1.Controls.Add(Me.SendTermButton)
         Me.GroupBox1.Location = New System.Drawing.Point(203, 84)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Size = New System.Drawing.Size(663, 66)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
@@ -370,7 +370,7 @@ Partial Class cdmaTerm
         'TermSendBox
         '
         Me.TermSendBox.Location = New System.Drawing.Point(8, 23)
-        Me.TermSendBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TermSendBox.Margin = New System.Windows.Forms.Padding(4)
         Me.TermSendBox.Name = "TermSendBox"
         Me.TermSendBox.Size = New System.Drawing.Size(539, 23)
         Me.TermSendBox.TabIndex = 2
@@ -379,7 +379,7 @@ Partial Class cdmaTerm
         'SendTermButton
         '
         Me.SendTermButton.Location = New System.Drawing.Point(556, 21)
-        Me.SendTermButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SendTermButton.Margin = New System.Windows.Forms.Padding(4)
         Me.SendTermButton.Name = "SendTermButton"
         Me.SendTermButton.Size = New System.Drawing.Size(100, 28)
         Me.SendTermButton.TabIndex = 1
@@ -391,9 +391,9 @@ Partial Class cdmaTerm
         Me.GroupBox2.Controls.Add(Me.AtSendCommand)
         Me.GroupBox2.Controls.Add(Me.ATSendButton)
         Me.GroupBox2.Location = New System.Drawing.Point(203, 4)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(663, 69)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
@@ -402,7 +402,7 @@ Partial Class cdmaTerm
         'AtSendCommand
         '
         Me.AtSendCommand.Location = New System.Drawing.Point(8, 27)
-        Me.AtSendCommand.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AtSendCommand.Margin = New System.Windows.Forms.Padding(4)
         Me.AtSendCommand.Name = "AtSendCommand"
         Me.AtSendCommand.Size = New System.Drawing.Size(539, 23)
         Me.AtSendCommand.TabIndex = 1
@@ -412,7 +412,7 @@ Partial Class cdmaTerm
         '
         Me.ComNumBox1.FormattingEnabled = True
         Me.ComNumBox1.Location = New System.Drawing.Point(27, 28)
-        Me.ComNumBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComNumBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComNumBox1.Name = "ComNumBox1"
         Me.ComNumBox1.Size = New System.Drawing.Size(308, 24)
         Me.ComNumBox1.TabIndex = 3
@@ -421,7 +421,7 @@ Partial Class cdmaTerm
         '
         Me.ComSpeedBox2.FormattingEnabled = True
         Me.ComSpeedBox2.Location = New System.Drawing.Point(139, 4)
-        Me.ComSpeedBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComSpeedBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.ComSpeedBox2.Name = "ComSpeedBox2"
         Me.ComSpeedBox2.Size = New System.Drawing.Size(91, 24)
         Me.ComSpeedBox2.TabIndex = 4
@@ -430,7 +430,7 @@ Partial Class cdmaTerm
         'ConnectButton
         '
         Me.ConnectButton.Location = New System.Drawing.Point(184, 64)
-        Me.ConnectButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ConnectButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ConnectButton.Name = "ConnectButton"
         Me.ConnectButton.Size = New System.Drawing.Size(152, 28)
         Me.ConnectButton.TabIndex = 3
@@ -440,7 +440,7 @@ Partial Class cdmaTerm
         'ScanButton
         '
         Me.ScanButton.Location = New System.Drawing.Point(27, 64)
-        Me.ScanButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ScanButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ScanButton.Name = "ScanButton"
         Me.ScanButton.Size = New System.Drawing.Size(152, 28)
         Me.ScanButton.TabIndex = 5
@@ -450,7 +450,7 @@ Partial Class cdmaTerm
         'testCRC_box_2
         '
         Me.testCRC_box_2.Location = New System.Drawing.Point(49, 337)
-        Me.testCRC_box_2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.testCRC_box_2.Margin = New System.Windows.Forms.Padding(4)
         Me.testCRC_box_2.Name = "testCRC_box_2"
         Me.testCRC_box_2.Size = New System.Drawing.Size(315, 22)
         Me.testCRC_box_2.TabIndex = 6
@@ -461,7 +461,7 @@ Partial Class cdmaTerm
         Me.commandMacroListBox.FormattingEnabled = True
         Me.commandMacroListBox.ItemHeight = 16
         Me.commandMacroListBox.Location = New System.Drawing.Point(11, 11)
-        Me.commandMacroListBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.commandMacroListBox.Margin = New System.Windows.Forms.Padding(4)
         Me.commandMacroListBox.Name = "commandMacroListBox"
         Me.commandMacroListBox.Size = New System.Drawing.Size(313, 276)
         Me.commandMacroListBox.TabIndex = 7
@@ -469,7 +469,7 @@ Partial Class cdmaTerm
         'TryCRC1Button
         '
         Me.TryCRC1Button.Location = New System.Drawing.Point(49, 463)
-        Me.TryCRC1Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TryCRC1Button.Margin = New System.Windows.Forms.Padding(4)
         Me.TryCRC1Button.Name = "TryCRC1Button"
         Me.TryCRC1Button.Size = New System.Drawing.Size(316, 28)
         Me.TryCRC1Button.TabIndex = 8
@@ -490,7 +490,7 @@ Partial Class cdmaTerm
         'keyPressButton1
         '
         Me.keyPressButton1.Location = New System.Drawing.Point(52, 140)
-        Me.keyPressButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton1.Name = "keyPressButton1"
         Me.keyPressButton1.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton1.TabIndex = 17
@@ -500,7 +500,7 @@ Partial Class cdmaTerm
         'keyPressButton2
         '
         Me.keyPressButton2.Location = New System.Drawing.Point(160, 140)
-        Me.keyPressButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton2.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton2.Name = "keyPressButton2"
         Me.keyPressButton2.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton2.TabIndex = 18
@@ -510,7 +510,7 @@ Partial Class cdmaTerm
         'keyPressButton3
         '
         Me.keyPressButton3.Location = New System.Drawing.Point(268, 140)
-        Me.keyPressButton3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton3.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton3.Name = "keyPressButton3"
         Me.keyPressButton3.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton3.TabIndex = 19
@@ -520,7 +520,7 @@ Partial Class cdmaTerm
         'keyPressButton6
         '
         Me.keyPressButton6.Location = New System.Drawing.Point(268, 225)
-        Me.keyPressButton6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton6.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton6.Name = "keyPressButton6"
         Me.keyPressButton6.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton6.TabIndex = 22
@@ -530,7 +530,7 @@ Partial Class cdmaTerm
         'keyPressButton5
         '
         Me.keyPressButton5.Location = New System.Drawing.Point(160, 225)
-        Me.keyPressButton5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton5.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton5.Name = "keyPressButton5"
         Me.keyPressButton5.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton5.TabIndex = 21
@@ -540,7 +540,7 @@ Partial Class cdmaTerm
         'keyPressButton4
         '
         Me.keyPressButton4.Location = New System.Drawing.Point(52, 225)
-        Me.keyPressButton4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton4.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton4.Name = "keyPressButton4"
         Me.keyPressButton4.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton4.TabIndex = 20
@@ -550,7 +550,7 @@ Partial Class cdmaTerm
         'keyPressButton9
         '
         Me.keyPressButton9.Location = New System.Drawing.Point(268, 310)
-        Me.keyPressButton9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton9.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton9.Name = "keyPressButton9"
         Me.keyPressButton9.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton9.TabIndex = 25
@@ -560,7 +560,7 @@ Partial Class cdmaTerm
         'keyPressButton8
         '
         Me.keyPressButton8.Location = New System.Drawing.Point(160, 310)
-        Me.keyPressButton8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton8.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton8.Name = "keyPressButton8"
         Me.keyPressButton8.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton8.TabIndex = 24
@@ -570,7 +570,7 @@ Partial Class cdmaTerm
         'keyPressButton7
         '
         Me.keyPressButton7.Location = New System.Drawing.Point(52, 310)
-        Me.keyPressButton7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton7.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton7.Name = "keyPressButton7"
         Me.keyPressButton7.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton7.TabIndex = 23
@@ -580,7 +580,7 @@ Partial Class cdmaTerm
         'keyPressButtonPound
         '
         Me.keyPressButtonPound.Location = New System.Drawing.Point(268, 395)
-        Me.keyPressButtonPound.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButtonPound.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButtonPound.Name = "keyPressButtonPound"
         Me.keyPressButtonPound.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButtonPound.TabIndex = 28
@@ -590,7 +590,7 @@ Partial Class cdmaTerm
         'keyPressButton0
         '
         Me.keyPressButton0.Location = New System.Drawing.Point(160, 395)
-        Me.keyPressButton0.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButton0.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButton0.Name = "keyPressButton0"
         Me.keyPressButton0.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButton0.TabIndex = 27
@@ -600,7 +600,7 @@ Partial Class cdmaTerm
         'keyPressButtonStar
         '
         Me.keyPressButtonStar.Location = New System.Drawing.Point(52, 395)
-        Me.keyPressButtonStar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButtonStar.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButtonStar.Name = "keyPressButtonStar"
         Me.keyPressButtonStar.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButtonStar.TabIndex = 26
@@ -610,7 +610,7 @@ Partial Class cdmaTerm
         'keyPressButtonSend
         '
         Me.keyPressButtonSend.Location = New System.Drawing.Point(52, 463)
-        Me.keyPressButtonSend.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButtonSend.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButtonSend.Name = "keyPressButtonSend"
         Me.keyPressButtonSend.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButtonSend.TabIndex = 31
@@ -620,7 +620,7 @@ Partial Class cdmaTerm
         'keyPressButtonEnd
         '
         Me.keyPressButtonEnd.Location = New System.Drawing.Point(268, 463)
-        Me.keyPressButtonEnd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.keyPressButtonEnd.Margin = New System.Windows.Forms.Padding(4)
         Me.keyPressButtonEnd.Name = "keyPressButtonEnd"
         Me.keyPressButtonEnd.Size = New System.Drawing.Size(100, 28)
         Me.keyPressButtonEnd.TabIndex = 30
@@ -638,12 +638,12 @@ Partial Class cdmaTerm
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(401, 63)
         Me.Label2.TabIndex = 32
-        Me.Label2.Text = "cdmaDevTerm"
+        Me.Label2.Text = "edgeModTool"
         '
         'commandSetButton
         '
         Me.commandSetButton.Location = New System.Drawing.Point(335, 214)
-        Me.commandSetButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.commandSetButton.Margin = New System.Windows.Forms.Padding(4)
         Me.commandSetButton.Name = "commandSetButton"
         Me.commandSetButton.Size = New System.Drawing.Size(73, 52)
         Me.commandSetButton.TabIndex = 33
@@ -654,7 +654,7 @@ Partial Class cdmaTerm
         'testCRC_box_3
         '
         Me.testCRC_box_3.Location = New System.Drawing.Point(49, 380)
-        Me.testCRC_box_3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.testCRC_box_3.Margin = New System.Windows.Forms.Padding(4)
         Me.testCRC_box_3.Name = "testCRC_box_3"
         Me.testCRC_box_3.Size = New System.Drawing.Size(315, 22)
         Me.testCRC_box_3.TabIndex = 34
@@ -663,7 +663,7 @@ Partial Class cdmaTerm
         'testCRC_box_4
         '
         Me.testCRC_box_4.Location = New System.Drawing.Point(49, 423)
-        Me.testCRC_box_4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.testCRC_box_4.Margin = New System.Windows.Forms.Padding(4)
         Me.testCRC_box_4.Name = "testCRC_box_4"
         Me.testCRC_box_4.Size = New System.Drawing.Size(315, 22)
         Me.testCRC_box_4.TabIndex = 37
@@ -671,7 +671,7 @@ Partial Class cdmaTerm
         'modeSwitchButton
         '
         Me.modeSwitchButton.Location = New System.Drawing.Point(184, 21)
-        Me.modeSwitchButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.modeSwitchButton.Margin = New System.Windows.Forms.Padding(4)
         Me.modeSwitchButton.Name = "modeSwitchButton"
         Me.modeSwitchButton.Size = New System.Drawing.Size(152, 28)
         Me.modeSwitchButton.TabIndex = 41
@@ -681,7 +681,7 @@ Partial Class cdmaTerm
         'addCommandButton
         '
         Me.addCommandButton.Location = New System.Drawing.Point(335, 332)
-        Me.addCommandButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.addCommandButton.Margin = New System.Windows.Forms.Padding(4)
         Me.addCommandButton.Name = "addCommandButton"
         Me.addCommandButton.Size = New System.Drawing.Size(75, 91)
         Me.addCommandButton.TabIndex = 42
@@ -691,7 +691,7 @@ Partial Class cdmaTerm
         'RemoveCommandButton
         '
         Me.RemoveCommandButton.Location = New System.Drawing.Point(335, 11)
-        Me.RemoveCommandButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RemoveCommandButton.Margin = New System.Windows.Forms.Padding(4)
         Me.RemoveCommandButton.Name = "RemoveCommandButton"
         Me.RemoveCommandButton.Size = New System.Drawing.Size(75, 78)
         Me.RemoveCommandButton.TabIndex = 43
@@ -701,7 +701,7 @@ Partial Class cdmaTerm
         'runCustomQcScriptButton
         '
         Me.runCustomQcScriptButton.Location = New System.Drawing.Point(11, 436)
-        Me.runCustomQcScriptButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.runCustomQcScriptButton.Margin = New System.Windows.Forms.Padding(4)
         Me.runCustomQcScriptButton.Name = "runCustomQcScriptButton"
         Me.runCustomQcScriptButton.Size = New System.Drawing.Size(399, 91)
         Me.runCustomQcScriptButton.TabIndex = 44
@@ -712,7 +712,7 @@ Partial Class cdmaTerm
         '
         Me.qcCommandsCombo.FormattingEnabled = True
         Me.qcCommandsCombo.Location = New System.Drawing.Point(11, 332)
-        Me.qcCommandsCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.qcCommandsCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.qcCommandsCombo.Name = "qcCommandsCombo"
         Me.qcCommandsCombo.Size = New System.Drawing.Size(313, 24)
         Me.qcCommandsCombo.TabIndex = 45
@@ -721,7 +721,7 @@ Partial Class cdmaTerm
         'sendSPC000000Button
         '
         Me.sendSPC000000Button.Location = New System.Drawing.Point(27, 92)
-        Me.sendSPC000000Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.sendSPC000000Button.Margin = New System.Windows.Forms.Padding(4)
         Me.sendSPC000000Button.Name = "sendSPC000000Button"
         Me.sendSPC000000Button.Size = New System.Drawing.Size(152, 28)
         Me.sendSPC000000Button.TabIndex = 46
@@ -731,7 +731,7 @@ Partial Class cdmaTerm
         'readSPCButton
         '
         Me.readSPCButton.Location = New System.Drawing.Point(184, 21)
-        Me.readSPCButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readSPCButton.Margin = New System.Windows.Forms.Padding(4)
         Me.readSPCButton.Name = "readSPCButton"
         Me.readSPCButton.Size = New System.Drawing.Size(152, 28)
         Me.readSPCButton.TabIndex = 48
@@ -741,7 +741,7 @@ Partial Class cdmaTerm
         'SPCTextbox
         '
         Me.SPCTextbox.Location = New System.Drawing.Point(27, 23)
-        Me.SPCTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SPCTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.SPCTextbox.Name = "SPCTextbox"
         Me.SPCTextbox.Size = New System.Drawing.Size(57, 22)
         Me.SPCTextbox.TabIndex = 49
@@ -751,7 +751,7 @@ Partial Class cdmaTerm
         Me.readSPCTypeCombo.FormattingEnabled = True
         Me.readSPCTypeCombo.Items.AddRange(New Object() {"NV", "HTC", "LG", "Samsung1", "Samsung2", "Kyocera", "EFS", "MetroPCS"})
         Me.readSPCTypeCombo.Location = New System.Drawing.Point(91, 23)
-        Me.readSPCTypeCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readSPCTypeCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.readSPCTypeCombo.Name = "readSPCTypeCombo"
         Me.readSPCTypeCombo.Size = New System.Drawing.Size(84, 24)
         Me.readSPCTypeCombo.TabIndex = 50
@@ -760,7 +760,7 @@ Partial Class cdmaTerm
         'Send16DigitCodeTextbox
         '
         Me.Send16DigitCodeTextbox.Location = New System.Drawing.Point(203, 582)
-        Me.Send16DigitCodeTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Send16DigitCodeTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.Send16DigitCodeTextbox.Name = "Send16DigitCodeTextbox"
         Me.Send16DigitCodeTextbox.Size = New System.Drawing.Size(492, 23)
         Me.Send16DigitCodeTextbox.TabIndex = 52
@@ -768,7 +768,7 @@ Partial Class cdmaTerm
         'Send16DigitCodeButton
         '
         Me.Send16DigitCodeButton.Location = New System.Drawing.Point(704, 580)
-        Me.Send16DigitCodeButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Send16DigitCodeButton.Margin = New System.Windows.Forms.Padding(4)
         Me.Send16DigitCodeButton.Name = "Send16DigitCodeButton"
         Me.Send16DigitCodeButton.Size = New System.Drawing.Size(155, 28)
         Me.Send16DigitCodeButton.TabIndex = 51
@@ -778,7 +778,7 @@ Partial Class cdmaTerm
         'SendPhoneIdentifierButton
         '
         Me.SendPhoneIdentifierButton.Location = New System.Drawing.Point(323, 18)
-        Me.SendPhoneIdentifierButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SendPhoneIdentifierButton.Margin = New System.Windows.Forms.Padding(4)
         Me.SendPhoneIdentifierButton.Name = "SendPhoneIdentifierButton"
         Me.SendPhoneIdentifierButton.Size = New System.Drawing.Size(135, 28)
         Me.SendPhoneIdentifierButton.TabIndex = 53
@@ -788,7 +788,7 @@ Partial Class cdmaTerm
         'writeSpc000000Button
         '
         Me.writeSpc000000Button.Location = New System.Drawing.Point(184, 92)
-        Me.writeSpc000000Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.writeSpc000000Button.Margin = New System.Windows.Forms.Padding(4)
         Me.writeSpc000000Button.Name = "writeSpc000000Button"
         Me.writeSpc000000Button.Size = New System.Drawing.Size(152, 28)
         Me.writeSpc000000Button.TabIndex = 54
@@ -799,7 +799,7 @@ Partial Class cdmaTerm
         '
         Me.disconnectPortButton.Enabled = False
         Me.disconnectPortButton.Location = New System.Drawing.Point(27, 102)
-        Me.disconnectPortButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.disconnectPortButton.Margin = New System.Windows.Forms.Padding(4)
         Me.disconnectPortButton.Name = "disconnectPortButton"
         Me.disconnectPortButton.Size = New System.Drawing.Size(152, 28)
         Me.disconnectPortButton.TabIndex = 57
@@ -809,7 +809,7 @@ Partial Class cdmaTerm
         'clearResultsButton
         '
         Me.clearResultsButton.Location = New System.Drawing.Point(203, 576)
-        Me.clearResultsButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.clearResultsButton.Margin = New System.Windows.Forms.Padding(4)
         Me.clearResultsButton.Name = "clearResultsButton"
         Me.clearResultsButton.Size = New System.Drawing.Size(667, 28)
         Me.clearResultsButton.TabIndex = 58
@@ -819,7 +819,7 @@ Partial Class cdmaTerm
         'AtReturnCmdBox
         '
         Me.AtReturnCmdBox.Location = New System.Drawing.Point(203, 178)
-        Me.AtReturnCmdBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AtReturnCmdBox.Margin = New System.Windows.Forms.Padding(4)
         Me.AtReturnCmdBox.Multiline = True
         Me.AtReturnCmdBox.Name = "AtReturnCmdBox"
         Me.AtReturnCmdBox.Size = New System.Drawing.Size(661, 184)
@@ -830,7 +830,7 @@ Partial Class cdmaTerm
         Me.select16digitCodeBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple
         Me.select16digitCodeBox.FormattingEnabled = True
         Me.select16digitCodeBox.Location = New System.Drawing.Point(203, 63)
-        Me.select16digitCodeBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.select16digitCodeBox.Margin = New System.Windows.Forms.Padding(4)
         Me.select16digitCodeBox.Name = "select16digitCodeBox"
         Me.select16digitCodeBox.Size = New System.Drawing.Size(492, 498)
         Me.select16digitCodeBox.TabIndex = 64
@@ -838,7 +838,7 @@ Partial Class cdmaTerm
         'testCRC_box_1
         '
         Me.testCRC_box_1.Location = New System.Drawing.Point(49, 294)
-        Me.testCRC_box_1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.testCRC_box_1.Margin = New System.Windows.Forms.Padding(4)
         Me.testCRC_box_1.Name = "testCRC_box_1"
         Me.testCRC_box_1.Size = New System.Drawing.Size(315, 22)
         Me.testCRC_box_1.TabIndex = 66
@@ -855,7 +855,7 @@ Partial Class cdmaTerm
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.DataSetup)
         Me.TabControl1.Location = New System.Drawing.Point(899, 0)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(428, 566)
@@ -872,7 +872,7 @@ Partial Class cdmaTerm
         Me.TabPage3.Controls.Add(Me.GroupBox18)
         Me.TabPage3.Controls.Add(Me.BlackberryMode)
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage3.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(420, 537)
         Me.TabPage3.TabIndex = 2
@@ -883,9 +883,9 @@ Partial Class cdmaTerm
         '
         Me.GroupBox20.Controls.Add(Me.sendAnyPrlButton)
         Me.GroupBox20.Location = New System.Drawing.Point(29, 448)
-        Me.GroupBox20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox20.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox20.Name = "GroupBox20"
-        Me.GroupBox20.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox20.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox20.Size = New System.Drawing.Size(361, 63)
         Me.GroupBox20.TabIndex = 108
         Me.GroupBox20.TabStop = False
@@ -894,7 +894,7 @@ Partial Class cdmaTerm
         'sendAnyPrlButton
         '
         Me.sendAnyPrlButton.Location = New System.Drawing.Point(27, 21)
-        Me.sendAnyPrlButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.sendAnyPrlButton.Margin = New System.Windows.Forms.Padding(4)
         Me.sendAnyPrlButton.Name = "sendAnyPrlButton"
         Me.sendAnyPrlButton.Size = New System.Drawing.Size(312, 28)
         Me.sendAnyPrlButton.TabIndex = 106
@@ -904,7 +904,7 @@ Partial Class cdmaTerm
         'provisionNamButton1
         '
         Me.provisionNamButton1.Location = New System.Drawing.Point(213, 498)
-        Me.provisionNamButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.provisionNamButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.provisionNamButton1.Name = "provisionNamButton1"
         Me.provisionNamButton1.Size = New System.Drawing.Size(151, 28)
         Me.provisionNamButton1.TabIndex = 79
@@ -919,9 +919,9 @@ Partial Class cdmaTerm
         Me.GroupBox15.Controls.Add(Me.modeSwitchCombo)
         Me.GroupBox15.Controls.Add(Me.sendQCDMButton)
         Me.GroupBox15.Location = New System.Drawing.Point(29, 170)
-        Me.GroupBox15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox15.Name = "GroupBox15"
-        Me.GroupBox15.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox15.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox15.Size = New System.Drawing.Size(361, 101)
         Me.GroupBox15.TabIndex = 108
         Me.GroupBox15.TabStop = False
@@ -930,7 +930,7 @@ Partial Class cdmaTerm
         'sendLGDMButton
         '
         Me.sendLGDMButton.Location = New System.Drawing.Point(184, 60)
-        Me.sendLGDMButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.sendLGDMButton.Margin = New System.Windows.Forms.Padding(4)
         Me.sendLGDMButton.Name = "sendLGDMButton"
         Me.sendLGDMButton.Size = New System.Drawing.Size(152, 28)
         Me.sendLGDMButton.TabIndex = 104
@@ -942,7 +942,7 @@ Partial Class cdmaTerm
         Me.modeSwitchCombo.FormattingEnabled = True
         Me.modeSwitchCombo.Items.AddRange(New Object() {"Offline", "Online", "Low", "Reset", "P2K"})
         Me.modeSwitchCombo.Location = New System.Drawing.Point(27, 23)
-        Me.modeSwitchCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.modeSwitchCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.modeSwitchCombo.Name = "modeSwitchCombo"
         Me.modeSwitchCombo.Size = New System.Drawing.Size(151, 24)
         Me.modeSwitchCombo.TabIndex = 102
@@ -951,7 +951,7 @@ Partial Class cdmaTerm
         'sendQCDMButton
         '
         Me.sendQCDMButton.Location = New System.Drawing.Point(27, 60)
-        Me.sendQCDMButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.sendQCDMButton.Margin = New System.Windows.Forms.Padding(4)
         Me.sendQCDMButton.Name = "sendQCDMButton"
         Me.sendQCDMButton.Size = New System.Drawing.Size(152, 28)
         Me.sendQCDMButton.TabIndex = 103
@@ -963,7 +963,7 @@ Partial Class cdmaTerm
         Me.selectPRLComboBox.FormattingEnabled = True
         Me.selectPRLComboBox.Items.AddRange(New Object() {"cricKet_1030", "metro_1001", "metro_2004"})
         Me.selectPRLComboBox.Location = New System.Drawing.Point(51, 501)
-        Me.selectPRLComboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.selectPRLComboBox.Margin = New System.Windows.Forms.Padding(4)
         Me.selectPRLComboBox.Name = "selectPRLComboBox"
         Me.selectPRLComboBox.Size = New System.Drawing.Size(153, 24)
         Me.selectPRLComboBox.TabIndex = 76
@@ -978,9 +978,9 @@ Partial Class cdmaTerm
         Me.GroupBox17.Controls.Add(Me.ConnectButton)
         Me.GroupBox17.Controls.Add(Me.disconnectPortButton)
         Me.GroupBox17.Location = New System.Drawing.Point(29, 20)
-        Me.GroupBox17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox17.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox17.Name = "GroupBox17"
-        Me.GroupBox17.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox17.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox17.Size = New System.Drawing.Size(361, 149)
         Me.GroupBox17.TabIndex = 106
         Me.GroupBox17.TabStop = False
@@ -989,7 +989,7 @@ Partial Class cdmaTerm
         'ReadAllBtn
         '
         Me.ReadAllBtn.Location = New System.Drawing.Point(184, 102)
-        Me.ReadAllBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadAllBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadAllBtn.Name = "ReadAllBtn"
         Me.ReadAllBtn.Size = New System.Drawing.Size(151, 28)
         Me.ReadAllBtn.TabIndex = 58
@@ -1008,9 +1008,9 @@ Partial Class cdmaTerm
         Me.GroupBox18.Controls.Add(Me.writeSpcButton)
         Me.GroupBox18.Controls.Add(Me.writeSpc000000Button)
         Me.GroupBox18.Location = New System.Drawing.Point(29, 274)
-        Me.GroupBox18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox18.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox18.Name = "GroupBox18"
-        Me.GroupBox18.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox18.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox18.Size = New System.Drawing.Size(361, 169)
         Me.GroupBox18.TabIndex = 107
         Me.GroupBox18.TabStop = False
@@ -1019,7 +1019,7 @@ Partial Class cdmaTerm
         'sendSPCButton
         '
         Me.sendSPCButton.Location = New System.Drawing.Point(27, 57)
-        Me.sendSPCButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.sendSPCButton.Margin = New System.Windows.Forms.Padding(4)
         Me.sendSPCButton.Name = "sendSPCButton"
         Me.sendSPCButton.Size = New System.Drawing.Size(152, 28)
         Me.sendSPCButton.TabIndex = 98
@@ -1029,7 +1029,7 @@ Partial Class cdmaTerm
         'readUserLockTextbox
         '
         Me.readUserLockTextbox.Location = New System.Drawing.Point(27, 130)
-        Me.readUserLockTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readUserLockTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.readUserLockTextbox.Name = "readUserLockTextbox"
         Me.readUserLockTextbox.Size = New System.Drawing.Size(148, 22)
         Me.readUserLockTextbox.TabIndex = 67
@@ -1037,7 +1037,7 @@ Partial Class cdmaTerm
         'readUserLockButton
         '
         Me.readUserLockButton.Location = New System.Drawing.Point(184, 128)
-        Me.readUserLockButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readUserLockButton.Margin = New System.Windows.Forms.Padding(4)
         Me.readUserLockButton.Name = "readUserLockButton"
         Me.readUserLockButton.Size = New System.Drawing.Size(152, 28)
         Me.readUserLockButton.TabIndex = 66
@@ -1047,7 +1047,7 @@ Partial Class cdmaTerm
         'writeSpcButton
         '
         Me.writeSpcButton.Location = New System.Drawing.Point(184, 57)
-        Me.writeSpcButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.writeSpcButton.Margin = New System.Windows.Forms.Padding(4)
         Me.writeSpcButton.Name = "writeSpcButton"
         Me.writeSpcButton.Size = New System.Drawing.Size(152, 28)
         Me.writeSpcButton.TabIndex = 99
@@ -1060,7 +1060,7 @@ Partial Class cdmaTerm
         Me.BlackberryMode.Checked = True
         Me.BlackberryMode.CheckState = System.Windows.Forms.CheckState.Checked
         Me.BlackberryMode.Location = New System.Drawing.Point(29, 7)
-        Me.BlackberryMode.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BlackberryMode.Margin = New System.Windows.Forms.Padding(4)
         Me.BlackberryMode.Name = "BlackberryMode"
         Me.BlackberryMode.Size = New System.Drawing.Size(97, 21)
         Me.BlackberryMode.TabIndex = 105
@@ -1080,9 +1080,9 @@ Partial Class cdmaTerm
         Me.TabPage2.Controls.Add(Me.runCustomQcScriptButton)
         Me.TabPage2.Controls.Add(Me.qcCommandsCombo)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage2.Size = New System.Drawing.Size(420, 537)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "QC Commands"
@@ -1101,7 +1101,7 @@ Partial Class cdmaTerm
         'qcMacroDataTextbox
         '
         Me.qcMacroDataTextbox.Location = New System.Drawing.Point(11, 399)
-        Me.qcMacroDataTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.qcMacroDataTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.qcMacroDataTextbox.Name = "qcMacroDataTextbox"
         Me.qcMacroDataTextbox.Size = New System.Drawing.Size(313, 22)
         Me.qcMacroDataTextbox.TabIndex = 47
@@ -1110,7 +1110,7 @@ Partial Class cdmaTerm
         '
         Me.nvItemsCombo.FormattingEnabled = True
         Me.nvItemsCombo.Location = New System.Drawing.Point(11, 366)
-        Me.nvItemsCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.nvItemsCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.nvItemsCombo.Name = "nvItemsCombo"
         Me.nvItemsCombo.Size = New System.Drawing.Size(313, 24)
         Me.nvItemsCombo.TabIndex = 46
@@ -1134,9 +1134,9 @@ Partial Class cdmaTerm
         Me.TabPage1.Controls.Add(Me.keyPressButtonEnd)
         Me.TabPage1.Controls.Add(Me.keyPressButtonSend)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(4)
         Me.TabPage1.Size = New System.Drawing.Size(420, 537)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Keypad"
@@ -1154,7 +1154,7 @@ Partial Class cdmaTerm
         Me.TabPage5.Controls.Add(Me.testCRC_box_3)
         Me.TabPage5.Controls.Add(Me.testCRC_box_4)
         Me.TabPage5.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage5.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Size = New System.Drawing.Size(420, 537)
         Me.TabPage5.TabIndex = 4
@@ -1164,7 +1164,7 @@ Partial Class cdmaTerm
         'CRCtest2
         '
         Me.CRCtest2.Location = New System.Drawing.Point(49, 502)
-        Me.CRCtest2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CRCtest2.Margin = New System.Windows.Forms.Padding(4)
         Me.CRCtest2.Name = "CRCtest2"
         Me.CRCtest2.Size = New System.Drawing.Size(315, 22)
         Me.CRCtest2.TabIndex = 87
@@ -1172,7 +1172,7 @@ Partial Class cdmaTerm
         'testCRC_box_pt5
         '
         Me.testCRC_box_pt5.Location = New System.Drawing.Point(49, 254)
-        Me.testCRC_box_pt5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.testCRC_box_pt5.Margin = New System.Windows.Forms.Padding(4)
         Me.testCRC_box_pt5.Name = "testCRC_box_pt5"
         Me.testCRC_box_pt5.Size = New System.Drawing.Size(315, 22)
         Me.testCRC_box_pt5.TabIndex = 86
@@ -1181,7 +1181,7 @@ Partial Class cdmaTerm
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(49, 54)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(315, 22)
         Me.TextBox5.TabIndex = 85
@@ -1207,7 +1207,7 @@ Partial Class cdmaTerm
         Me.TabPage6.Controls.Add(Me.Button20)
         Me.TabPage6.Controls.Add(Me.Button1)
         Me.TabPage6.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage6.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Size = New System.Drawing.Size(420, 537)
         Me.TabPage6.TabIndex = 6
@@ -1227,7 +1227,7 @@ Partial Class cdmaTerm
         'Button23
         '
         Me.Button23.Location = New System.Drawing.Point(7, 368)
-        Me.Button23.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button23.Margin = New System.Windows.Forms.Padding(4)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(404, 28)
         Me.Button23.TabIndex = 0
@@ -1237,7 +1237,7 @@ Partial Class cdmaTerm
         'xmlScriptTreeView
         '
         Me.xmlScriptTreeView.Location = New System.Drawing.Point(7, 7)
-        Me.xmlScriptTreeView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.xmlScriptTreeView.Margin = New System.Windows.Forms.Padding(4)
         Me.xmlScriptTreeView.Name = "xmlScriptTreeView"
         Me.xmlScriptTreeView.Size = New System.Drawing.Size(403, 319)
         Me.xmlScriptTreeView.TabIndex = 3
@@ -1245,7 +1245,7 @@ Partial Class cdmaTerm
         'Button21
         '
         Me.Button21.Location = New System.Drawing.Point(7, 439)
-        Me.Button21.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button21.Margin = New System.Windows.Forms.Padding(4)
         Me.Button21.Name = "Button21"
         Me.Button21.Size = New System.Drawing.Size(404, 28)
         Me.Button21.TabIndex = 2
@@ -1255,7 +1255,7 @@ Partial Class cdmaTerm
         'Button20
         '
         Me.Button20.Location = New System.Drawing.Point(7, 404)
-        Me.Button20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(4)
         Me.Button20.Name = "Button20"
         Me.Button20.Size = New System.Drawing.Size(404, 28)
         Me.Button20.TabIndex = 1
@@ -1266,7 +1266,7 @@ Partial Class cdmaTerm
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(7, 475)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(404, 28)
         Me.Button1.TabIndex = 5
@@ -1285,7 +1285,7 @@ Partial Class cdmaTerm
         Me.TabPage4.Controls.Add(Me.Button19)
         Me.TabPage4.Controls.Add(Me.Button24)
         Me.TabPage4.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TabPage4.Margin = New System.Windows.Forms.Padding(4)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Size = New System.Drawing.Size(420, 537)
         Me.TabPage4.TabIndex = 7
@@ -1295,7 +1295,7 @@ Partial Class cdmaTerm
         'Button29
         '
         Me.Button29.Location = New System.Drawing.Point(8, 27)
-        Me.Button29.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button29.Margin = New System.Windows.Forms.Padding(4)
         Me.Button29.Name = "Button29"
         Me.Button29.Size = New System.Drawing.Size(404, 47)
         Me.Button29.TabIndex = 7
@@ -1306,7 +1306,7 @@ Partial Class cdmaTerm
         'Button28
         '
         Me.Button28.Location = New System.Drawing.Point(9, 81)
-        Me.Button28.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button28.Margin = New System.Windows.Forms.Padding(4)
         Me.Button28.Name = "Button28"
         Me.Button28.Size = New System.Drawing.Size(404, 47)
         Me.Button28.TabIndex = 6
@@ -1317,7 +1317,7 @@ Partial Class cdmaTerm
         'Button27
         '
         Me.Button27.Location = New System.Drawing.Point(9, 135)
-        Me.Button27.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button27.Margin = New System.Windows.Forms.Padding(4)
         Me.Button27.Name = "Button27"
         Me.Button27.Size = New System.Drawing.Size(404, 47)
         Me.Button27.TabIndex = 5
@@ -1328,7 +1328,7 @@ Partial Class cdmaTerm
         'Button26
         '
         Me.Button26.Location = New System.Drawing.Point(9, 190)
-        Me.Button26.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button26.Margin = New System.Windows.Forms.Padding(4)
         Me.Button26.Name = "Button26"
         Me.Button26.Size = New System.Drawing.Size(404, 47)
         Me.Button26.TabIndex = 4
@@ -1339,7 +1339,7 @@ Partial Class cdmaTerm
         'Button25
         '
         Me.Button25.Location = New System.Drawing.Point(9, 244)
-        Me.Button25.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button25.Margin = New System.Windows.Forms.Padding(4)
         Me.Button25.Name = "Button25"
         Me.Button25.Size = New System.Drawing.Size(404, 47)
         Me.Button25.TabIndex = 3
@@ -1350,7 +1350,7 @@ Partial Class cdmaTerm
         'Button22
         '
         Me.Button22.Location = New System.Drawing.Point(9, 298)
-        Me.Button22.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button22.Margin = New System.Windows.Forms.Padding(4)
         Me.Button22.Name = "Button22"
         Me.Button22.Size = New System.Drawing.Size(404, 47)
         Me.Button22.TabIndex = 2
@@ -1361,7 +1361,7 @@ Partial Class cdmaTerm
         'Button19
         '
         Me.Button19.Location = New System.Drawing.Point(8, 352)
-        Me.Button19.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(4)
         Me.Button19.Name = "Button19"
         Me.Button19.Size = New System.Drawing.Size(404, 47)
         Me.Button19.TabIndex = 1
@@ -1372,7 +1372,7 @@ Partial Class cdmaTerm
         'Button24
         '
         Me.Button24.Location = New System.Drawing.Point(8, 406)
-        Me.Button24.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button24.Margin = New System.Windows.Forms.Padding(4)
         Me.Button24.Name = "Button24"
         Me.Button24.Size = New System.Drawing.Size(404, 82)
         Me.Button24.TabIndex = 0
@@ -1389,7 +1389,7 @@ Partial Class cdmaTerm
         Me.DataSetup.Controls.Add(Me.automagic350check)
         Me.DataSetup.Controls.Add(Me.ModelComboBox)
         Me.DataSetup.Location = New System.Drawing.Point(4, 25)
-        Me.DataSetup.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataSetup.Margin = New System.Windows.Forms.Padding(4)
         Me.DataSetup.Name = "DataSetup"
         Me.DataSetup.Size = New System.Drawing.Size(420, 537)
         Me.DataSetup.TabIndex = 8
@@ -1401,7 +1401,7 @@ Partial Class cdmaTerm
         Me.CarrierFlashCombo.FormattingEnabled = True
         Me.CarrierFlashCombo.Items.AddRange(New Object() {"CricKet", "MetroPCS"})
         Me.CarrierFlashCombo.Location = New System.Drawing.Point(129, 101)
-        Me.CarrierFlashCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CarrierFlashCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.CarrierFlashCombo.Name = "CarrierFlashCombo"
         Me.CarrierFlashCombo.Size = New System.Drawing.Size(179, 24)
         Me.CarrierFlashCombo.TabIndex = 101
@@ -1412,7 +1412,7 @@ Partial Class cdmaTerm
         '
         Me.hideAdvancedNamGroupCheckbox.AutoSize = True
         Me.hideAdvancedNamGroupCheckbox.Location = New System.Drawing.Point(16, 166)
-        Me.hideAdvancedNamGroupCheckbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.hideAdvancedNamGroupCheckbox.Margin = New System.Windows.Forms.Padding(4)
         Me.hideAdvancedNamGroupCheckbox.Name = "hideAdvancedNamGroupCheckbox"
         Me.hideAdvancedNamGroupCheckbox.Size = New System.Drawing.Size(126, 21)
         Me.hideAdvancedNamGroupCheckbox.TabIndex = 96
@@ -1423,7 +1423,7 @@ Partial Class cdmaTerm
         'autoFlashCountTextbox
         '
         Me.autoFlashCountTextbox.Location = New System.Drawing.Point(356, 164)
-        Me.autoFlashCountTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.autoFlashCountTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.autoFlashCountTextbox.Name = "autoFlashCountTextbox"
         Me.autoFlashCountTextbox.Size = New System.Drawing.Size(43, 22)
         Me.autoFlashCountTextbox.TabIndex = 71
@@ -1432,7 +1432,7 @@ Partial Class cdmaTerm
         'zeroSPCPRLButton
         '
         Me.zeroSPCPRLButton.Location = New System.Drawing.Point(87, 15)
-        Me.zeroSPCPRLButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.zeroSPCPRLButton.Margin = New System.Windows.Forms.Padding(4)
         Me.zeroSPCPRLButton.Name = "zeroSPCPRLButton"
         Me.zeroSPCPRLButton.Size = New System.Drawing.Size(260, 36)
         Me.zeroSPCPRLButton.TabIndex = 100
@@ -1443,7 +1443,7 @@ Partial Class cdmaTerm
         'tryU350MagicButton
         '
         Me.tryU350MagicButton.Location = New System.Drawing.Point(224, 161)
-        Me.tryU350MagicButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.tryU350MagicButton.Margin = New System.Windows.Forms.Padding(4)
         Me.tryU350MagicButton.Name = "tryU350MagicButton"
         Me.tryU350MagicButton.Size = New System.Drawing.Size(104, 28)
         Me.tryU350MagicButton.TabIndex = 1
@@ -1455,7 +1455,7 @@ Partial Class cdmaTerm
         '
         Me.automagic350check.AutoSize = True
         Me.automagic350check.Location = New System.Drawing.Point(336, 167)
-        Me.automagic350check.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.automagic350check.Margin = New System.Windows.Forms.Padding(4)
         Me.automagic350check.Name = "automagic350check"
         Me.automagic350check.Size = New System.Drawing.Size(39, 21)
         Me.automagic350check.TabIndex = 70
@@ -1467,7 +1467,7 @@ Partial Class cdmaTerm
         '
         Me.ModelComboBox.FormattingEnabled = True
         Me.ModelComboBox.Location = New System.Drawing.Point(129, 68)
-        Me.ModelComboBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ModelComboBox.Margin = New System.Windows.Forms.Padding(4)
         Me.ModelComboBox.Name = "ModelComboBox"
         Me.ModelComboBox.Size = New System.Drawing.Size(180, 24)
         Me.ModelComboBox.TabIndex = 77
@@ -1497,7 +1497,7 @@ Partial Class cdmaTerm
         'DataMinTxt
         '
         Me.DataMinTxt.Location = New System.Drawing.Point(112, 58)
-        Me.DataMinTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataMinTxt.Margin = New System.Windows.Forms.Padding(4)
         Me.DataMinTxt.Name = "DataMinTxt"
         Me.DataMinTxt.Size = New System.Drawing.Size(132, 23)
         Me.DataMinTxt.TabIndex = 2
@@ -1505,7 +1505,7 @@ Partial Class cdmaTerm
         'DataMdnTxt
         '
         Me.DataMdnTxt.Location = New System.Drawing.Point(112, 28)
-        Me.DataMdnTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataMdnTxt.Margin = New System.Windows.Forms.Padding(4)
         Me.DataMdnTxt.Name = "DataMdnTxt"
         Me.DataMdnTxt.Size = New System.Drawing.Size(132, 23)
         Me.DataMdnTxt.TabIndex = 1
@@ -1513,7 +1513,7 @@ Partial Class cdmaTerm
         'ReloadDataSetup
         '
         Me.ReloadDataSetup.Location = New System.Drawing.Point(271, 18)
-        Me.ReloadDataSetup.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReloadDataSetup.Margin = New System.Windows.Forms.Padding(4)
         Me.ReloadDataSetup.Name = "ReloadDataSetup"
         Me.ReloadDataSetup.Size = New System.Drawing.Size(435, 84)
         Me.ReloadDataSetup.TabIndex = 0
@@ -1523,7 +1523,7 @@ Partial Class cdmaTerm
         'readChipsetButton
         '
         Me.readChipsetButton.Location = New System.Drawing.Point(323, 55)
-        Me.readChipsetButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readChipsetButton.Margin = New System.Windows.Forms.Padding(4)
         Me.readChipsetButton.Name = "readChipsetButton"
         Me.readChipsetButton.Size = New System.Drawing.Size(135, 28)
         Me.readChipsetButton.TabIndex = 64
@@ -1533,7 +1533,7 @@ Partial Class cdmaTerm
         'readNam0MdnButton
         '
         Me.readNam0MdnButton.Location = New System.Drawing.Point(149, 18)
-        Me.readNam0MdnButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readNam0MdnButton.Margin = New System.Windows.Forms.Padding(4)
         Me.readNam0MdnButton.Name = "readNam0MdnButton"
         Me.readNam0MdnButton.Size = New System.Drawing.Size(155, 28)
         Me.readNam0MdnButton.TabIndex = 63
@@ -1543,7 +1543,7 @@ Partial Class cdmaTerm
         'evdo_p4Textbox
         '
         Me.evdo_p4Textbox.Location = New System.Drawing.Point(17, 379)
-        Me.evdo_p4Textbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_p4Textbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_p4Textbox.Name = "evdo_p4Textbox"
         Me.evdo_p4Textbox.Size = New System.Drawing.Size(68, 28)
         Me.evdo_p4Textbox.TabIndex = 7
@@ -1553,7 +1553,7 @@ Partial Class cdmaTerm
         'evdo_u4Textbox
         '
         Me.evdo_u4Textbox.Location = New System.Drawing.Point(17, 343)
-        Me.evdo_u4Textbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_u4Textbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_u4Textbox.Name = "evdo_u4Textbox"
         Me.evdo_u4Textbox.Size = New System.Drawing.Size(68, 28)
         Me.evdo_u4Textbox.TabIndex = 6
@@ -1563,7 +1563,7 @@ Partial Class cdmaTerm
         'evdo_p3Textbox
         '
         Me.evdo_p3Textbox.Location = New System.Drawing.Point(17, 306)
-        Me.evdo_p3Textbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_p3Textbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_p3Textbox.Name = "evdo_p3Textbox"
         Me.evdo_p3Textbox.Size = New System.Drawing.Size(68, 28)
         Me.evdo_p3Textbox.TabIndex = 5
@@ -1573,7 +1573,7 @@ Partial Class cdmaTerm
         'evdo_u3Textbox
         '
         Me.evdo_u3Textbox.Location = New System.Drawing.Point(17, 271)
-        Me.evdo_u3Textbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_u3Textbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_u3Textbox.Name = "evdo_u3Textbox"
         Me.evdo_u3Textbox.Size = New System.Drawing.Size(68, 28)
         Me.evdo_u3Textbox.TabIndex = 4
@@ -1583,7 +1583,7 @@ Partial Class cdmaTerm
         'evdo_p2Textbox
         '
         Me.evdo_p2Textbox.Location = New System.Drawing.Point(17, 235)
-        Me.evdo_p2Textbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_p2Textbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_p2Textbox.Name = "evdo_p2Textbox"
         Me.evdo_p2Textbox.Size = New System.Drawing.Size(68, 28)
         Me.evdo_p2Textbox.TabIndex = 3
@@ -1593,7 +1593,7 @@ Partial Class cdmaTerm
         'evdo_u2Textbox
         '
         Me.evdo_u2Textbox.Location = New System.Drawing.Point(17, 199)
-        Me.evdo_u2Textbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_u2Textbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_u2Textbox.Name = "evdo_u2Textbox"
         Me.evdo_u2Textbox.Size = New System.Drawing.Size(68, 28)
         Me.evdo_u2Textbox.TabIndex = 2
@@ -1603,7 +1603,7 @@ Partial Class cdmaTerm
         'evdo_p1Textbox
         '
         Me.evdo_p1Textbox.Location = New System.Drawing.Point(17, 164)
-        Me.evdo_p1Textbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_p1Textbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_p1Textbox.Name = "evdo_p1Textbox"
         Me.evdo_p1Textbox.Size = New System.Drawing.Size(68, 28)
         Me.evdo_p1Textbox.TabIndex = 1
@@ -1613,7 +1613,7 @@ Partial Class cdmaTerm
         'evdo_u1Textbox
         '
         Me.evdo_u1Textbox.Location = New System.Drawing.Point(17, 128)
-        Me.evdo_u1Textbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_u1Textbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_u1Textbox.Name = "evdo_u1Textbox"
         Me.evdo_u1Textbox.Size = New System.Drawing.Size(68, 28)
         Me.evdo_u1Textbox.TabIndex = 0
@@ -1634,7 +1634,7 @@ Partial Class cdmaTerm
         'convertToAsciiTextBox
         '
         Me.convertToAsciiTextBox.Location = New System.Drawing.Point(203, 383)
-        Me.convertToAsciiTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.convertToAsciiTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.convertToAsciiTextBox.Multiline = True
         Me.convertToAsciiTextBox.Name = "convertToAsciiTextBox"
         Me.convertToAsciiTextBox.Size = New System.Drawing.Size(661, 184)
@@ -1654,7 +1654,7 @@ Partial Class cdmaTerm
         Me.LeftTabControl.Controls.Add(Me.Update)
         Me.LeftTabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LeftTabControl.Location = New System.Drawing.Point(16, 7)
-        Me.LeftTabControl.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LeftTabControl.Margin = New System.Windows.Forms.Padding(4)
         Me.LeftTabControl.Multiline = True
         Me.LeftTabControl.Name = "LeftTabControl"
         Me.LeftTabControl.RightToLeft = System.Windows.Forms.RightToLeft.No
@@ -1668,7 +1668,7 @@ Partial Class cdmaTerm
         Me.NamAndDataTab.Controls.Add(Me.AdvancedNamGroup)
         Me.NamAndDataTab.Controls.Add(Me.AutoFlashGroup)
         Me.NamAndDataTab.Location = New System.Drawing.Point(4, 29)
-        Me.NamAndDataTab.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NamAndDataTab.Margin = New System.Windows.Forms.Padding(4)
         Me.NamAndDataTab.Name = "NamAndDataTab"
         Me.NamAndDataTab.Size = New System.Drawing.Size(872, 614)
         Me.NamAndDataTab.TabIndex = 3
@@ -1679,7 +1679,7 @@ Partial Class cdmaTerm
         '
         Me.ChromableedLogo.Image = CType(resources.GetObject("ChromableedLogo.Image"), System.Drawing.Image)
         Me.ChromableedLogo.Location = New System.Drawing.Point(5, 10)
-        Me.ChromableedLogo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ChromableedLogo.Margin = New System.Windows.Forms.Padding(4)
         Me.ChromableedLogo.Name = "ChromableedLogo"
         Me.ChromableedLogo.Size = New System.Drawing.Size(120, 98)
         Me.ChromableedLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1698,9 +1698,9 @@ Partial Class cdmaTerm
         Me.AdvancedNamGroup.Controls.Add(Me.SendAllEvdoButton)
         Me.AdvancedNamGroup.Controls.Add(Me.ReadAllEvdoButton)
         Me.AdvancedNamGroup.Location = New System.Drawing.Point(4, 121)
-        Me.AdvancedNamGroup.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AdvancedNamGroup.Margin = New System.Windows.Forms.Padding(4)
         Me.AdvancedNamGroup.Name = "AdvancedNamGroup"
-        Me.AdvancedNamGroup.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AdvancedNamGroup.Padding = New System.Windows.Forms.Padding(4)
         Me.AdvancedNamGroup.Size = New System.Drawing.Size(857, 492)
         Me.AdvancedNamGroup.TabIndex = 87
         Me.AdvancedNamGroup.TabStop = False
@@ -1731,9 +1731,9 @@ Partial Class cdmaTerm
         Me.GroupBox19.Controls.Add(Me.MIN2RawTxtbox)
         Me.GroupBox19.Controls.Add(Me.MIN1RawTxtbox)
         Me.GroupBox19.Location = New System.Drawing.Point(8, 23)
-        Me.GroupBox19.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox19.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox19.Name = "GroupBox19"
-        Me.GroupBox19.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox19.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox19.Size = New System.Drawing.Size(469, 167)
         Me.GroupBox19.TabIndex = 98
         Me.GroupBox19.TabStop = False
@@ -1742,7 +1742,7 @@ Partial Class cdmaTerm
         'ReadNamLockBtn
         '
         Me.ReadNamLockBtn.Location = New System.Drawing.Point(323, 91)
-        Me.ReadNamLockBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadNamLockBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadNamLockBtn.Name = "ReadNamLockBtn"
         Me.ReadNamLockBtn.Size = New System.Drawing.Size(135, 28)
         Me.ReadNamLockBtn.TabIndex = 118
@@ -1752,7 +1752,7 @@ Partial Class cdmaTerm
         'WriteNamLockButton
         '
         Me.WriteNamLockButton.Location = New System.Drawing.Point(425, 127)
-        Me.WriteNamLockButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.WriteNamLockButton.Margin = New System.Windows.Forms.Padding(4)
         Me.WriteNamLockButton.Name = "WriteNamLockButton"
         Me.WriteNamLockButton.Size = New System.Drawing.Size(32, 28)
         Me.WriteNamLockButton.TabIndex = 117
@@ -1763,7 +1763,7 @@ Partial Class cdmaTerm
         '
         Me.NamLockCheckbox.AutoSize = True
         Me.NamLockCheckbox.Location = New System.Drawing.Point(323, 132)
-        Me.NamLockCheckbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NamLockCheckbox.Margin = New System.Windows.Forms.Padding(4)
         Me.NamLockCheckbox.Name = "NamLockCheckbox"
         Me.NamLockCheckbox.Size = New System.Drawing.Size(98, 21)
         Me.NamLockCheckbox.TabIndex = 116
@@ -1773,7 +1773,7 @@ Partial Class cdmaTerm
         'NIDTextbox
         '
         Me.NIDTextbox.Location = New System.Drawing.Point(89, 129)
-        Me.NIDTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NIDTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.NIDTextbox.Name = "NIDTextbox"
         Me.NIDTextbox.Size = New System.Drawing.Size(71, 23)
         Me.NIDTextbox.TabIndex = 114
@@ -1782,7 +1782,7 @@ Partial Class cdmaTerm
         'WriteSIDButton
         '
         Me.WriteSIDButton.Location = New System.Drawing.Point(169, 127)
-        Me.WriteSIDButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.WriteSIDButton.Margin = New System.Windows.Forms.Padding(4)
         Me.WriteSIDButton.Name = "WriteSIDButton"
         Me.WriteSIDButton.Size = New System.Drawing.Size(32, 28)
         Me.WriteSIDButton.TabIndex = 113
@@ -1792,7 +1792,7 @@ Partial Class cdmaTerm
         'SIDTextbox
         '
         Me.SIDTextbox.Location = New System.Drawing.Point(9, 129)
-        Me.SIDTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SIDTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.SIDTextbox.Name = "SIDTextbox"
         Me.SIDTextbox.Size = New System.Drawing.Size(71, 23)
         Me.SIDTextbox.TabIndex = 112
@@ -1801,7 +1801,7 @@ Partial Class cdmaTerm
         'ReadSIDButton
         '
         Me.ReadSIDButton.Location = New System.Drawing.Point(209, 127)
-        Me.ReadSIDButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadSIDButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadSIDButton.Name = "ReadSIDButton"
         Me.ReadSIDButton.Size = New System.Drawing.Size(95, 28)
         Me.ReadSIDButton.TabIndex = 111
@@ -1811,7 +1811,7 @@ Partial Class cdmaTerm
         'WriteBbRegIdButton
         '
         Me.WriteBbRegIdButton.Location = New System.Drawing.Point(109, 91)
-        Me.WriteBbRegIdButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.WriteBbRegIdButton.Margin = New System.Windows.Forms.Padding(4)
         Me.WriteBbRegIdButton.Name = "WriteBbRegIdButton"
         Me.WriteBbRegIdButton.Size = New System.Drawing.Size(32, 28)
         Me.WriteBbRegIdButton.TabIndex = 110
@@ -1821,7 +1821,7 @@ Partial Class cdmaTerm
         'BbRegIdTextbox
         '
         Me.BbRegIdTextbox.Location = New System.Drawing.Point(9, 94)
-        Me.BbRegIdTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BbRegIdTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.BbRegIdTextbox.Name = "BbRegIdTextbox"
         Me.BbRegIdTextbox.Size = New System.Drawing.Size(87, 23)
         Me.BbRegIdTextbox.TabIndex = 109
@@ -1830,7 +1830,7 @@ Partial Class cdmaTerm
         'ReadBbRegIdButton
         '
         Me.ReadBbRegIdButton.Location = New System.Drawing.Point(149, 91)
-        Me.ReadBbRegIdButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadBbRegIdButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadBbRegIdButton.Name = "ReadBbRegIdButton"
         Me.ReadBbRegIdButton.Size = New System.Drawing.Size(155, 28)
         Me.ReadBbRegIdButton.TabIndex = 108
@@ -1840,7 +1840,7 @@ Partial Class cdmaTerm
         'WriteMIN1Button
         '
         Me.WriteMIN1Button.Location = New System.Drawing.Point(109, 54)
-        Me.WriteMIN1Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.WriteMIN1Button.Margin = New System.Windows.Forms.Padding(4)
         Me.WriteMIN1Button.Name = "WriteMIN1Button"
         Me.WriteMIN1Button.Size = New System.Drawing.Size(32, 28)
         Me.WriteMIN1Button.TabIndex = 107
@@ -1850,7 +1850,7 @@ Partial Class cdmaTerm
         'writeNam0MdnButton
         '
         Me.writeNam0MdnButton.Location = New System.Drawing.Point(109, 18)
-        Me.writeNam0MdnButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.writeNam0MdnButton.Margin = New System.Windows.Forms.Padding(4)
         Me.writeNam0MdnButton.Name = "writeNam0MdnButton"
         Me.writeNam0MdnButton.Size = New System.Drawing.Size(32, 28)
         Me.writeNam0MdnButton.TabIndex = 105
@@ -1862,7 +1862,7 @@ Partial Class cdmaTerm
         Me.nam0MDNTextbox.AccessibleDescription = "MDN the phone number"
         Me.nam0MDNTextbox.AccessibleName = "MDN"
         Me.nam0MDNTextbox.Location = New System.Drawing.Point(9, 21)
-        Me.nam0MDNTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.nam0MDNTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.nam0MDNTextbox.Name = "nam0MDNTextbox"
         Me.nam0MDNTextbox.Size = New System.Drawing.Size(91, 23)
         Me.nam0MDNTextbox.TabIndex = 71
@@ -1871,7 +1871,7 @@ Partial Class cdmaTerm
         'MIN1Txtbox
         '
         Me.MIN1Txtbox.Location = New System.Drawing.Point(9, 57)
-        Me.MIN1Txtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MIN1Txtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.MIN1Txtbox.Name = "MIN1Txtbox"
         Me.MIN1Txtbox.Size = New System.Drawing.Size(91, 23)
         Me.MIN1Txtbox.TabIndex = 102
@@ -1880,7 +1880,7 @@ Partial Class cdmaTerm
         'ReadMIN1Button
         '
         Me.ReadMIN1Button.Location = New System.Drawing.Point(149, 55)
-        Me.ReadMIN1Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadMIN1Button.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadMIN1Button.Name = "ReadMIN1Button"
         Me.ReadMIN1Button.Size = New System.Drawing.Size(155, 28)
         Me.ReadMIN1Button.TabIndex = 72
@@ -1890,7 +1890,7 @@ Partial Class cdmaTerm
         'EncodeMINButton
         '
         Me.EncodeMINButton.Location = New System.Drawing.Point(256, 59)
-        Me.EncodeMINButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.EncodeMINButton.Margin = New System.Windows.Forms.Padding(4)
         Me.EncodeMINButton.Name = "EncodeMINButton"
         Me.EncodeMINButton.Size = New System.Drawing.Size(48, 28)
         Me.EncodeMINButton.TabIndex = 106
@@ -1901,7 +1901,7 @@ Partial Class cdmaTerm
         'ReadMIN2Button
         '
         Me.ReadMIN2Button.Location = New System.Drawing.Point(200, 59)
-        Me.ReadMIN2Button.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadMIN2Button.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadMIN2Button.Name = "ReadMIN2Button"
         Me.ReadMIN2Button.Size = New System.Drawing.Size(48, 28)
         Me.ReadMIN2Button.TabIndex = 104
@@ -1912,7 +1912,7 @@ Partial Class cdmaTerm
         'MIN2RawTxtbox
         '
         Me.MIN2RawTxtbox.Location = New System.Drawing.Point(105, 62)
-        Me.MIN2RawTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MIN2RawTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.MIN2RawTxtbox.Name = "MIN2RawTxtbox"
         Me.MIN2RawTxtbox.Size = New System.Drawing.Size(84, 23)
         Me.MIN2RawTxtbox.TabIndex = 67
@@ -1922,7 +1922,7 @@ Partial Class cdmaTerm
         'MIN1RawTxtbox
         '
         Me.MIN1RawTxtbox.Location = New System.Drawing.Point(9, 62)
-        Me.MIN1RawTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MIN1RawTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.MIN1RawTxtbox.Name = "MIN1RawTxtbox"
         Me.MIN1RawTxtbox.Size = New System.Drawing.Size(87, 23)
         Me.MIN1RawTxtbox.TabIndex = 99
@@ -1932,7 +1932,7 @@ Partial Class cdmaTerm
         'readEsnButton
         '
         Me.readEsnButton.Location = New System.Drawing.Point(317, 439)
-        Me.readEsnButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readEsnButton.Margin = New System.Windows.Forms.Padding(4)
         Me.readEsnButton.Name = "readEsnButton"
         Me.readEsnButton.Size = New System.Drawing.Size(160, 28)
         Me.readEsnButton.TabIndex = 65
@@ -1942,7 +1942,7 @@ Partial Class cdmaTerm
         'nvReadMeidButton
         '
         Me.nvReadMeidButton.Location = New System.Drawing.Point(149, 439)
-        Me.nvReadMeidButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.nvReadMeidButton.Margin = New System.Windows.Forms.Padding(4)
         Me.nvReadMeidButton.Name = "nvReadMeidButton"
         Me.nvReadMeidButton.Size = New System.Drawing.Size(160, 28)
         Me.nvReadMeidButton.TabIndex = 56
@@ -1955,9 +1955,9 @@ Partial Class cdmaTerm
         Me.GroupBox16.Controls.Add(Me.readESNTextBox)
         Me.GroupBox16.Controls.Add(Me.ResultsListBox)
         Me.GroupBox16.Location = New System.Drawing.Point(8, 238)
-        Me.GroupBox16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox16.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox16.Name = "GroupBox16"
-        Me.GroupBox16.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox16.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox16.Size = New System.Drawing.Size(469, 194)
         Me.GroupBox16.TabIndex = 106
         Me.GroupBox16.TabStop = False
@@ -1966,7 +1966,7 @@ Partial Class cdmaTerm
         'meidExtractedFromPacketTxtbox
         '
         Me.meidExtractedFromPacketTxtbox.Location = New System.Drawing.Point(9, 20)
-        Me.meidExtractedFromPacketTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.meidExtractedFromPacketTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.meidExtractedFromPacketTxtbox.Name = "meidExtractedFromPacketTxtbox"
         Me.meidExtractedFromPacketTxtbox.Size = New System.Drawing.Size(175, 23)
         Me.meidExtractedFromPacketTxtbox.TabIndex = 61
@@ -1974,7 +1974,7 @@ Partial Class cdmaTerm
         'readESNTextBox
         '
         Me.readESNTextBox.Location = New System.Drawing.Point(9, 52)
-        Me.readESNTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readESNTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.readESNTextBox.Name = "readESNTextBox"
         Me.readESNTextBox.Size = New System.Drawing.Size(175, 23)
         Me.readESNTextBox.TabIndex = 68
@@ -1984,7 +1984,7 @@ Partial Class cdmaTerm
         Me.ResultsListBox.FormattingEnabled = True
         Me.ResultsListBox.ItemHeight = 17
         Me.ResultsListBox.Location = New System.Drawing.Point(193, 21)
-        Me.ResultsListBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ResultsListBox.Margin = New System.Windows.Forms.Padding(4)
         Me.ResultsListBox.Name = "ResultsListBox"
         Me.ResultsListBox.Size = New System.Drawing.Size(263, 140)
         Me.ResultsListBox.TabIndex = 97
@@ -1992,7 +1992,7 @@ Partial Class cdmaTerm
         'ReadAllNamButton
         '
         Me.ReadAllNamButton.Location = New System.Drawing.Point(317, 198)
-        Me.ReadAllNamButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadAllNamButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadAllNamButton.Name = "ReadAllNamButton"
         Me.ReadAllNamButton.Size = New System.Drawing.Size(160, 28)
         Me.ReadAllNamButton.TabIndex = 115
@@ -2002,7 +2002,7 @@ Partial Class cdmaTerm
         'lgReadMeidButton
         '
         Me.lgReadMeidButton.Location = New System.Drawing.Point(445, 239)
-        Me.lgReadMeidButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.lgReadMeidButton.Margin = New System.Windows.Forms.Padding(4)
         Me.lgReadMeidButton.Name = "lgReadMeidButton"
         Me.lgReadMeidButton.Size = New System.Drawing.Size(32, 177)
         Me.lgReadMeidButton.TabIndex = 101
@@ -2040,9 +2040,9 @@ Partial Class cdmaTerm
         Me.GroupBox14.Controls.Add(Me.evdo_u3Textbox)
         Me.GroupBox14.Controls.Add(Me.evdo_p2Textbox)
         Me.GroupBox14.Location = New System.Drawing.Point(485, 60)
-        Me.GroupBox14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox14.Name = "GroupBox14"
-        Me.GroupBox14.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox14.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox14.Size = New System.Drawing.Size(364, 421)
         Me.GroupBox14.TabIndex = 97
         Me.GroupBox14.TabStop = False
@@ -2071,7 +2071,7 @@ Partial Class cdmaTerm
         'WriteNVQCMIPProfileBtn
         '
         Me.WriteNVQCMIPProfileBtn.Location = New System.Drawing.Point(205, 59)
-        Me.WriteNVQCMIPProfileBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.WriteNVQCMIPProfileBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.WriteNVQCMIPProfileBtn.Name = "WriteNVQCMIPProfileBtn"
         Me.WriteNVQCMIPProfileBtn.Size = New System.Drawing.Size(32, 28)
         Me.WriteNVQCMIPProfileBtn.TabIndex = 101
@@ -2081,7 +2081,7 @@ Partial Class cdmaTerm
         'ReadNVQCMIPProfBtn
         '
         Me.ReadNVQCMIPProfBtn.Location = New System.Drawing.Point(245, 59)
-        Me.ReadNVQCMIPProfBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadNVQCMIPProfBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadNVQCMIPProfBtn.Name = "ReadNVQCMIPProfBtn"
         Me.ReadNVQCMIPProfBtn.Size = New System.Drawing.Size(103, 28)
         Me.ReadNVQCMIPProfBtn.TabIndex = 100
@@ -2092,7 +2092,7 @@ Partial Class cdmaTerm
         '
         Me.SelectedProfileCombo.FormattingEnabled = True
         Me.SelectedProfileCombo.Location = New System.Drawing.Point(147, 60)
-        Me.SelectedProfileCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SelectedProfileCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.SelectedProfileCombo.Name = "SelectedProfileCombo"
         Me.SelectedProfileCombo.Size = New System.Drawing.Size(49, 25)
         Me.SelectedProfileCombo.TabIndex = 99
@@ -2101,7 +2101,7 @@ Partial Class cdmaTerm
         '
         Me.NumberOfProfilesComboBox1.FormattingEnabled = True
         Me.NumberOfProfilesComboBox1.Location = New System.Drawing.Point(33, 60)
-        Me.NumberOfProfilesComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NumberOfProfilesComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.NumberOfProfilesComboBox1.Name = "NumberOfProfilesComboBox1"
         Me.NumberOfProfilesComboBox1.Size = New System.Drawing.Size(56, 25)
         Me.NumberOfProfilesComboBox1.TabIndex = 98
@@ -2111,7 +2111,7 @@ Partial Class cdmaTerm
         Me.evdoModeCombo.FormattingEnabled = True
         Me.evdoModeCombo.Items.AddRange(New Object() {"Simple IP", "Mobile+Simple IP", "Mobile IP"})
         Me.evdoModeCombo.Location = New System.Drawing.Point(17, 96)
-        Me.evdoModeCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdoModeCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.evdoModeCombo.Name = "evdoModeCombo"
         Me.evdoModeCombo.Size = New System.Drawing.Size(179, 25)
         Me.evdoModeCombo.TabIndex = 97
@@ -2119,7 +2119,7 @@ Partial Class cdmaTerm
         'WriteEvdoModeButton
         '
         Me.WriteEvdoModeButton.Location = New System.Drawing.Point(205, 94)
-        Me.WriteEvdoModeButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.WriteEvdoModeButton.Margin = New System.Windows.Forms.Padding(4)
         Me.WriteEvdoModeButton.Name = "WriteEvdoModeButton"
         Me.WriteEvdoModeButton.Size = New System.Drawing.Size(32, 28)
         Me.WriteEvdoModeButton.TabIndex = 96
@@ -2129,7 +2129,7 @@ Partial Class cdmaTerm
         'ReadEvdoModeButton
         '
         Me.ReadEvdoModeButton.Location = New System.Drawing.Point(245, 94)
-        Me.ReadEvdoModeButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadEvdoModeButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadEvdoModeButton.Name = "ReadEvdoModeButton"
         Me.ReadEvdoModeButton.Size = New System.Drawing.Size(103, 28)
         Me.ReadEvdoModeButton.TabIndex = 95
@@ -2219,7 +2219,7 @@ Partial Class cdmaTerm
         'evdo_usernameTextbox
         '
         Me.evdo_usernameTextbox.Location = New System.Drawing.Point(15, 23)
-        Me.evdo_usernameTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_usernameTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_usernameTextbox.Name = "evdo_usernameTextbox"
         Me.evdo_usernameTextbox.Size = New System.Drawing.Size(221, 23)
         Me.evdo_usernameTextbox.TabIndex = 84
@@ -2228,7 +2228,7 @@ Partial Class cdmaTerm
         'evdo_passwordTextbox
         '
         Me.evdo_passwordTextbox.Location = New System.Drawing.Point(245, 23)
-        Me.evdo_passwordTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.evdo_passwordTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.evdo_passwordTextbox.Name = "evdo_passwordTextbox"
         Me.evdo_passwordTextbox.Size = New System.Drawing.Size(109, 23)
         Me.evdo_passwordTextbox.TabIndex = 85
@@ -2237,7 +2237,7 @@ Partial Class cdmaTerm
         'SendAllEvdoButton
         '
         Me.SendAllEvdoButton.Location = New System.Drawing.Point(667, 23)
-        Me.SendAllEvdoButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SendAllEvdoButton.Margin = New System.Windows.Forms.Padding(4)
         Me.SendAllEvdoButton.Name = "SendAllEvdoButton"
         Me.SendAllEvdoButton.Size = New System.Drawing.Size(183, 28)
         Me.SendAllEvdoButton.TabIndex = 8
@@ -2247,7 +2247,7 @@ Partial Class cdmaTerm
         'ReadAllEvdoButton
         '
         Me.ReadAllEvdoButton.Location = New System.Drawing.Point(485, 23)
-        Me.ReadAllEvdoButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadAllEvdoButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadAllEvdoButton.Name = "ReadAllEvdoButton"
         Me.ReadAllEvdoButton.Size = New System.Drawing.Size(173, 28)
         Me.ReadAllEvdoButton.TabIndex = 86
@@ -2263,9 +2263,9 @@ Partial Class cdmaTerm
         Me.AutoFlashGroup.Controls.Add(Me.DataMdnTxt)
         Me.AutoFlashGroup.Controls.Add(Me.Label26)
         Me.AutoFlashGroup.Location = New System.Drawing.Point(140, 4)
-        Me.AutoFlashGroup.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AutoFlashGroup.Margin = New System.Windows.Forms.Padding(4)
         Me.AutoFlashGroup.Name = "AutoFlashGroup"
-        Me.AutoFlashGroup.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AutoFlashGroup.Padding = New System.Windows.Forms.Padding(4)
         Me.AutoFlashGroup.Size = New System.Drawing.Size(721, 110)
         Me.AutoFlashGroup.TabIndex = 86
         Me.AutoFlashGroup.TabStop = False
@@ -2275,9 +2275,9 @@ Partial Class cdmaTerm
         '
         Me.PictureBox1.Image = Global.cdmaTerm.My.Resources.Resources.Cricket_Black1
         Me.PictureBox1.Location = New System.Drawing.Point(7, 16)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(56, 87)
+        Me.PictureBox1.Size = New System.Drawing.Size(49, 86)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 78
         Me.PictureBox1.TabStop = False
@@ -2293,10 +2293,10 @@ Partial Class cdmaTerm
         Me.SecurityPasswordTab.Controls.Add(Me.Send16DigitCodeButton)
         Me.SecurityPasswordTab.Controls.Add(Me.Send16DigitCodeTextbox)
         Me.SecurityPasswordTab.Controls.Add(Me.PictureBox2)
-        Me.SecurityPasswordTab.Location = New System.Drawing.Point(4, 57)
-        Me.SecurityPasswordTab.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SecurityPasswordTab.Location = New System.Drawing.Point(4, 29)
+        Me.SecurityPasswordTab.Margin = New System.Windows.Forms.Padding(4)
         Me.SecurityPasswordTab.Name = "SecurityPasswordTab"
-        Me.SecurityPasswordTab.Size = New System.Drawing.Size(872, 586)
+        Me.SecurityPasswordTab.Size = New System.Drawing.Size(872, 614)
         Me.SecurityPasswordTab.TabIndex = 0
         Me.SecurityPasswordTab.Text = "SAMSUNG 16 SP"
         '
@@ -2315,7 +2315,7 @@ Partial Class cdmaTerm
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"cricKet_1030", "metro_1001", "metro_2004"})
         Me.ComboBox2.Location = New System.Drawing.Point(704, 166)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(153, 25)
         Me.ComboBox2.TabIndex = 82
@@ -2324,7 +2324,7 @@ Partial Class cdmaTerm
         'samsungAutoMagicButton
         '
         Me.samsungAutoMagicButton.Location = New System.Drawing.Point(704, 63)
-        Me.samsungAutoMagicButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.samsungAutoMagicButton.Margin = New System.Windows.Forms.Padding(4)
         Me.samsungAutoMagicButton.Name = "samsungAutoMagicButton"
         Me.samsungAutoMagicButton.Size = New System.Drawing.Size(155, 91)
         Me.samsungAutoMagicButton.TabIndex = 81
@@ -2335,7 +2335,7 @@ Partial Class cdmaTerm
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(189, 608)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2350,10 +2350,10 @@ Partial Class cdmaTerm
         Me.TermAndATTab.Controls.Add(Me.GroupBox1)
         Me.TermAndATTab.Controls.Add(Me.clearResultsButton)
         Me.TermAndATTab.Controls.Add(Me.GroupBox2)
-        Me.TermAndATTab.Location = New System.Drawing.Point(4, 57)
-        Me.TermAndATTab.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TermAndATTab.Location = New System.Drawing.Point(4, 29)
+        Me.TermAndATTab.Margin = New System.Windows.Forms.Padding(4)
         Me.TermAndATTab.Name = "TermAndATTab"
-        Me.TermAndATTab.Size = New System.Drawing.Size(872, 586)
+        Me.TermAndATTab.Size = New System.Drawing.Size(872, 614)
         Me.TermAndATTab.TabIndex = 2
         Me.TermAndATTab.Text = "TERM / AT"
         Me.TermAndATTab.UseVisualStyleBackColor = True
@@ -2362,7 +2362,7 @@ Partial Class cdmaTerm
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(189, 608)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2375,10 +2375,10 @@ Partial Class cdmaTerm
         Me.CmdAndADB.Controls.Add(Me.GroupBox5)
         Me.CmdAndADB.Controls.Add(Me.andoidReturnTextbox)
         Me.CmdAndADB.Controls.Add(Me.GroupBox6)
-        Me.CmdAndADB.Location = New System.Drawing.Point(4, 57)
-        Me.CmdAndADB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CmdAndADB.Location = New System.Drawing.Point(4, 29)
+        Me.CmdAndADB.Margin = New System.Windows.Forms.Padding(4)
         Me.CmdAndADB.Name = "CmdAndADB"
-        Me.CmdAndADB.Size = New System.Drawing.Size(872, 586)
+        Me.CmdAndADB.Size = New System.Drawing.Size(872, 614)
         Me.CmdAndADB.TabIndex = 6
         Me.CmdAndADB.Text = "CMD / ADB*"
         Me.CmdAndADB.UseVisualStyleBackColor = True
@@ -2387,7 +2387,7 @@ Partial Class cdmaTerm
         '
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
         Me.PictureBox5.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(189, 608)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2403,9 +2403,9 @@ Partial Class cdmaTerm
         Me.GroupBox5.Controls.Add(Me.buildAndroidScriptTextbox)
         Me.GroupBox5.Controls.Add(Me.SendCmdBtn)
         Me.GroupBox5.Location = New System.Drawing.Point(203, 4)
-        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox5.Size = New System.Drawing.Size(663, 242)
         Me.GroupBox5.TabIndex = 81
         Me.GroupBox5.TabStop = False
@@ -2417,7 +2417,7 @@ Partial Class cdmaTerm
         Me.commandsListBox.ItemHeight = 17
         Me.commandsListBox.Items.AddRange(New Object() {"dir"})
         Me.commandsListBox.Location = New System.Drawing.Point(11, 91)
-        Me.commandsListBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.commandsListBox.Margin = New System.Windows.Forms.Padding(4)
         Me.commandsListBox.Name = "commandsListBox"
         Me.commandsListBox.ScrollAlwaysVisible = True
         Me.commandsListBox.Size = New System.Drawing.Size(643, 123)
@@ -2426,7 +2426,7 @@ Partial Class cdmaTerm
         'runAndroidScript
         '
         Me.runAndroidScript.Location = New System.Drawing.Point(511, 55)
-        Me.runAndroidScript.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.runAndroidScript.Margin = New System.Windows.Forms.Padding(4)
         Me.runAndroidScript.Name = "runAndroidScript"
         Me.runAndroidScript.Size = New System.Drawing.Size(144, 28)
         Me.runAndroidScript.TabIndex = 5
@@ -2436,7 +2436,7 @@ Partial Class cdmaTerm
         'addAndroidScriptCmdButton
         '
         Me.addAndroidScriptCmdButton.Location = New System.Drawing.Point(359, 55)
-        Me.addAndroidScriptCmdButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.addAndroidScriptCmdButton.Margin = New System.Windows.Forms.Padding(4)
         Me.addAndroidScriptCmdButton.Name = "addAndroidScriptCmdButton"
         Me.addAndroidScriptCmdButton.Size = New System.Drawing.Size(144, 28)
         Me.addAndroidScriptCmdButton.TabIndex = 7
@@ -2446,7 +2446,7 @@ Partial Class cdmaTerm
         'SendSingleCmdTxtbox
         '
         Me.SendSingleCmdTxtbox.Location = New System.Drawing.Point(11, 26)
-        Me.SendSingleCmdTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SendSingleCmdTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.SendSingleCmdTxtbox.Name = "SendSingleCmdTxtbox"
         Me.SendSingleCmdTxtbox.Size = New System.Drawing.Size(491, 23)
         Me.SendSingleCmdTxtbox.TabIndex = 1
@@ -2455,7 +2455,7 @@ Partial Class cdmaTerm
         'buildAndroidScriptTextbox
         '
         Me.buildAndroidScriptTextbox.Location = New System.Drawing.Point(11, 58)
-        Me.buildAndroidScriptTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.buildAndroidScriptTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.buildAndroidScriptTextbox.Name = "buildAndroidScriptTextbox"
         Me.buildAndroidScriptTextbox.Size = New System.Drawing.Size(339, 23)
         Me.buildAndroidScriptTextbox.TabIndex = 6
@@ -2464,7 +2464,7 @@ Partial Class cdmaTerm
         'SendCmdBtn
         '
         Me.SendCmdBtn.Location = New System.Drawing.Point(511, 23)
-        Me.SendCmdBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SendCmdBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.SendCmdBtn.Name = "SendCmdBtn"
         Me.SendCmdBtn.Size = New System.Drawing.Size(144, 28)
         Me.SendCmdBtn.TabIndex = 0
@@ -2474,7 +2474,7 @@ Partial Class cdmaTerm
         'andoidReturnTextbox
         '
         Me.andoidReturnTextbox.Location = New System.Drawing.Point(203, 367)
-        Me.andoidReturnTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.andoidReturnTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.andoidReturnTextbox.Multiline = True
         Me.andoidReturnTextbox.Name = "andoidReturnTextbox"
         Me.andoidReturnTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -2488,9 +2488,9 @@ Partial Class cdmaTerm
         Me.GroupBox6.Controls.Add(Me.AdbCommandTxtbox)
         Me.GroupBox6.Controls.Add(Me.SendAdbBtn)
         Me.GroupBox6.Location = New System.Drawing.Point(203, 254)
-        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox6.Size = New System.Drawing.Size(663, 106)
         Me.GroupBox6.TabIndex = 80
         Me.GroupBox6.TabStop = False
@@ -2499,7 +2499,7 @@ Partial Class cdmaTerm
         'AndroidSdkPathTxtbox
         '
         Me.AndroidSdkPathTxtbox.Location = New System.Drawing.Point(11, 62)
-        Me.AndroidSdkPathTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AndroidSdkPathTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.AndroidSdkPathTxtbox.Name = "AndroidSdkPathTxtbox"
         Me.AndroidSdkPathTxtbox.Size = New System.Drawing.Size(491, 23)
         Me.AndroidSdkPathTxtbox.TabIndex = 4
@@ -2507,7 +2507,7 @@ Partial Class cdmaTerm
         'SetSdkPathBtn
         '
         Me.SetSdkPathBtn.Location = New System.Drawing.Point(511, 59)
-        Me.SetSdkPathBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SetSdkPathBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.SetSdkPathBtn.Name = "SetSdkPathBtn"
         Me.SetSdkPathBtn.Size = New System.Drawing.Size(144, 28)
         Me.SetSdkPathBtn.TabIndex = 3
@@ -2517,7 +2517,7 @@ Partial Class cdmaTerm
         'AdbCommandTxtbox
         '
         Me.AdbCommandTxtbox.Location = New System.Drawing.Point(11, 23)
-        Me.AdbCommandTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AdbCommandTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.AdbCommandTxtbox.Name = "AdbCommandTxtbox"
         Me.AdbCommandTxtbox.Size = New System.Drawing.Size(491, 23)
         Me.AdbCommandTxtbox.TabIndex = 2
@@ -2526,7 +2526,7 @@ Partial Class cdmaTerm
         'SendAdbBtn
         '
         Me.SendAdbBtn.Location = New System.Drawing.Point(511, 23)
-        Me.SendAdbBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SendAdbBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.SendAdbBtn.Name = "SendAdbBtn"
         Me.SendAdbBtn.Size = New System.Drawing.Size(144, 28)
         Me.SendAdbBtn.TabIndex = 1
@@ -2538,10 +2538,10 @@ Partial Class cdmaTerm
         Me.RamAndNV.Controls.Add(Me.GroupBox7)
         Me.RamAndNV.Controls.Add(Me.GroupBox4)
         Me.RamAndNV.Controls.Add(Me.PictureBox4)
-        Me.RamAndNV.Location = New System.Drawing.Point(4, 57)
-        Me.RamAndNV.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RamAndNV.Location = New System.Drawing.Point(4, 29)
+        Me.RamAndNV.Margin = New System.Windows.Forms.Padding(4)
         Me.RamAndNV.Name = "RamAndNV"
-        Me.RamAndNV.Size = New System.Drawing.Size(872, 586)
+        Me.RamAndNV.Size = New System.Drawing.Size(872, 614)
         Me.RamAndNV.TabIndex = 4
         Me.RamAndNV.Text = "RAM / NV"
         Me.RamAndNV.UseVisualStyleBackColor = True
@@ -2551,9 +2551,9 @@ Partial Class cdmaTerm
         Me.GroupBox7.Controls.Add(Me.GroupBox13)
         Me.GroupBox7.Controls.Add(Me.GroupBox12)
         Me.GroupBox7.Location = New System.Drawing.Point(203, 311)
-        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox7.Size = New System.Drawing.Size(663, 302)
         Me.GroupBox7.TabIndex = 82
         Me.GroupBox7.TabStop = False
@@ -2570,9 +2570,9 @@ Partial Class cdmaTerm
         Me.GroupBox13.Controls.Add(Me.NVItemWrite)
         Me.GroupBox13.Controls.Add(Me.NVWriteFromFile)
         Me.GroupBox13.Location = New System.Drawing.Point(229, 23)
-        Me.GroupBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox13.Name = "GroupBox13"
-        Me.GroupBox13.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox13.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox13.Size = New System.Drawing.Size(403, 261)
         Me.GroupBox13.TabIndex = 99
         Me.GroupBox13.TabStop = False
@@ -2601,7 +2601,7 @@ Partial Class cdmaTerm
         'NVItemValueTextbox
         '
         Me.NVItemValueTextbox.Location = New System.Drawing.Point(29, 161)
-        Me.NVItemValueTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NVItemValueTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.NVItemValueTextbox.Multiline = True
         Me.NVItemValueTextbox.Name = "NVItemValueTextbox"
         Me.NVItemValueTextbox.Size = New System.Drawing.Size(351, 80)
@@ -2611,7 +2611,7 @@ Partial Class cdmaTerm
         'NVItemNumberTextbox
         '
         Me.NVItemNumberTextbox.Location = New System.Drawing.Point(201, 101)
-        Me.NVItemNumberTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NVItemNumberTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.NVItemNumberTextbox.Name = "NVItemNumberTextbox"
         Me.NVItemNumberTextbox.Size = New System.Drawing.Size(183, 23)
         Me.NVItemNumberTextbox.TabIndex = 101
@@ -2620,7 +2620,7 @@ Partial Class cdmaTerm
         'NvEditorBtn
         '
         Me.NvEditorBtn.Location = New System.Drawing.Point(24, 27)
-        Me.NvEditorBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NvEditorBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.NvEditorBtn.Name = "NvEditorBtn"
         Me.NvEditorBtn.Size = New System.Drawing.Size(357, 28)
         Me.NvEditorBtn.TabIndex = 98
@@ -2631,7 +2631,7 @@ Partial Class cdmaTerm
         '
         Me.CheckBox10.AutoSize = True
         Me.CheckBox10.Location = New System.Drawing.Point(223, 133)
-        Me.CheckBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox10.Name = "CheckBox10"
         Me.CheckBox10.Size = New System.Drawing.Size(115, 21)
         Me.CheckBox10.TabIndex = 97
@@ -2642,7 +2642,7 @@ Partial Class cdmaTerm
         'NVItemWrite
         '
         Me.NVItemWrite.Location = New System.Drawing.Point(23, 63)
-        Me.NVItemWrite.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NVItemWrite.Margin = New System.Windows.Forms.Padding(4)
         Me.NVItemWrite.Name = "NVItemWrite"
         Me.NVItemWrite.Size = New System.Drawing.Size(152, 28)
         Me.NVItemWrite.TabIndex = 69
@@ -2653,7 +2653,7 @@ Partial Class cdmaTerm
         '
         Me.NVWriteFromFile.AutoSize = True
         Me.NVWriteFromFile.Location = New System.Drawing.Point(197, 68)
-        Me.NVWriteFromFile.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NVWriteFromFile.Margin = New System.Windows.Forms.Padding(4)
         Me.NVWriteFromFile.Name = "NVWriteFromFile"
         Me.NVWriteFromFile.Size = New System.Drawing.Size(173, 21)
         Me.NVWriteFromFile.TabIndex = 95
@@ -2670,9 +2670,9 @@ Partial Class cdmaTerm
         Me.GroupBox12.Controls.Add(Me.startingNVItemCombo)
         Me.GroupBox12.Controls.Add(Me.endingNVItemCombo)
         Me.GroupBox12.Location = New System.Drawing.Point(16, 23)
-        Me.GroupBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox12.Name = "GroupBox12"
-        Me.GroupBox12.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox12.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox12.Size = New System.Drawing.Size(193, 261)
         Me.GroupBox12.TabIndex = 98
         Me.GroupBox12.TabStop = False
@@ -2681,7 +2681,7 @@ Partial Class cdmaTerm
         'readNVListButton
         '
         Me.readNVListButton.Location = New System.Drawing.Point(20, 220)
-        Me.readNVListButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readNVListButton.Margin = New System.Windows.Forms.Padding(4)
         Me.readNVListButton.Name = "readNVListButton"
         Me.readNVListButton.Size = New System.Drawing.Size(152, 28)
         Me.readNVListButton.TabIndex = 75
@@ -2691,7 +2691,7 @@ Partial Class cdmaTerm
         'ReadNvListTextbox
         '
         Me.ReadNvListTextbox.Location = New System.Drawing.Point(20, 140)
-        Me.ReadNvListTextbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadNvListTextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadNvListTextbox.Multiline = True
         Me.ReadNvListTextbox.Name = "ReadNvListTextbox"
         Me.ReadNvListTextbox.Size = New System.Drawing.Size(151, 67)
@@ -2720,7 +2720,7 @@ Partial Class cdmaTerm
         'readNVButton
         '
         Me.readNVButton.Location = New System.Drawing.Point(20, 98)
-        Me.readNVButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.readNVButton.Margin = New System.Windows.Forms.Padding(4)
         Me.readNVButton.Name = "readNVButton"
         Me.readNVButton.Size = New System.Drawing.Size(152, 28)
         Me.readNVButton.TabIndex = 69
@@ -2731,7 +2731,7 @@ Partial Class cdmaTerm
         '
         Me.startingNVItemCombo.FormattingEnabled = True
         Me.startingNVItemCombo.Location = New System.Drawing.Point(64, 23)
-        Me.startingNVItemCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.startingNVItemCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.startingNVItemCombo.Name = "startingNVItemCombo"
         Me.startingNVItemCombo.Size = New System.Drawing.Size(108, 25)
         Me.startingNVItemCombo.TabIndex = 70
@@ -2741,7 +2741,7 @@ Partial Class cdmaTerm
         '
         Me.endingNVItemCombo.FormattingEnabled = True
         Me.endingNVItemCombo.Location = New System.Drawing.Point(64, 63)
-        Me.endingNVItemCombo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.endingNVItemCombo.Margin = New System.Windows.Forms.Padding(4)
         Me.endingNVItemCombo.Name = "endingNVItemCombo"
         Me.endingNVItemCombo.Size = New System.Drawing.Size(108, 25)
         Me.endingNVItemCombo.TabIndex = 71
@@ -2752,9 +2752,9 @@ Partial Class cdmaTerm
         Me.GroupBox4.Controls.Add(Me.GroupBox11)
         Me.GroupBox4.Controls.Add(Me.GroupBox9)
         Me.GroupBox4.Location = New System.Drawing.Point(204, 5)
-        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox4.Size = New System.Drawing.Size(661, 302)
         Me.GroupBox4.TabIndex = 81
         Me.GroupBox4.TabStop = False
@@ -2769,9 +2769,9 @@ Partial Class cdmaTerm
         Me.GroupBox11.Controls.Add(Me.ScanRamEnd)
         Me.GroupBox11.Controls.Add(Me.ScanRamStart)
         Me.GroupBox11.Location = New System.Drawing.Point(437, 23)
-        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox11.Name = "GroupBox11"
-        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox11.Size = New System.Drawing.Size(193, 261)
         Me.GroupBox11.TabIndex = 98
         Me.GroupBox11.TabStop = False
@@ -2782,7 +2782,7 @@ Partial Class cdmaTerm
         Me.RamScanResultListBox.FormattingEnabled = True
         Me.RamScanResultListBox.ItemHeight = 17
         Me.RamScanResultListBox.Location = New System.Drawing.Point(20, 102)
-        Me.RamScanResultListBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RamScanResultListBox.Margin = New System.Windows.Forms.Padding(4)
         Me.RamScanResultListBox.Name = "RamScanResultListBox"
         Me.RamScanResultListBox.Size = New System.Drawing.Size(151, 89)
         Me.RamScanResultListBox.TabIndex = 110
@@ -2810,7 +2810,7 @@ Partial Class cdmaTerm
         'ScanForReadableRamBtn
         '
         Me.ScanForReadableRamBtn.Location = New System.Drawing.Point(20, 213)
-        Me.ScanForReadableRamBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ScanForReadableRamBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.ScanForReadableRamBtn.Name = "ScanForReadableRamBtn"
         Me.ScanForReadableRamBtn.Size = New System.Drawing.Size(152, 28)
         Me.ScanForReadableRamBtn.TabIndex = 98
@@ -2821,7 +2821,7 @@ Partial Class cdmaTerm
         '
         Me.ScanRamEnd.FormattingEnabled = True
         Me.ScanRamEnd.Location = New System.Drawing.Point(20, 53)
-        Me.ScanRamEnd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ScanRamEnd.Margin = New System.Windows.Forms.Padding(4)
         Me.ScanRamEnd.Name = "ScanRamEnd"
         Me.ScanRamEnd.Size = New System.Drawing.Size(151, 25)
         Me.ScanRamEnd.TabIndex = 100
@@ -2831,7 +2831,7 @@ Partial Class cdmaTerm
         '
         Me.ScanRamStart.FormattingEnabled = True
         Me.ScanRamStart.Location = New System.Drawing.Point(20, 20)
-        Me.ScanRamStart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ScanRamStart.Margin = New System.Windows.Forms.Padding(4)
         Me.ScanRamStart.Name = "ScanRamStart"
         Me.ScanRamStart.Size = New System.Drawing.Size(151, 25)
         Me.ScanRamStart.TabIndex = 99
@@ -2855,9 +2855,9 @@ Partial Class cdmaTerm
         Me.GroupBox9.Controls.Add(Me.Label12)
         Me.GroupBox9.Controls.Add(Me.Label13)
         Me.GroupBox9.Location = New System.Drawing.Point(35, 23)
-        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox9.Size = New System.Drawing.Size(395, 261)
         Me.GroupBox9.TabIndex = 97
         Me.GroupBox9.TabStop = False
@@ -2906,7 +2906,7 @@ Partial Class cdmaTerm
         'RamEndOffset
         '
         Me.RamEndOffset.Location = New System.Drawing.Point(127, 96)
-        Me.RamEndOffset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RamEndOffset.Margin = New System.Windows.Forms.Padding(4)
         Me.RamEndOffset.Name = "RamEndOffset"
         Me.RamEndOffset.Size = New System.Drawing.Size(51, 23)
         Me.RamEndOffset.TabIndex = 101
@@ -2915,7 +2915,7 @@ Partial Class cdmaTerm
         'RamEndAddress
         '
         Me.RamEndAddress.Location = New System.Drawing.Point(67, 96)
-        Me.RamEndAddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RamEndAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.RamEndAddress.Name = "RamEndAddress"
         Me.RamEndAddress.Size = New System.Drawing.Size(51, 23)
         Me.RamEndAddress.TabIndex = 100
@@ -2924,7 +2924,7 @@ Partial Class cdmaTerm
         'RamStartOffset
         '
         Me.RamStartOffset.Location = New System.Drawing.Point(127, 64)
-        Me.RamStartOffset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RamStartOffset.Margin = New System.Windows.Forms.Padding(4)
         Me.RamStartOffset.Name = "RamStartOffset"
         Me.RamStartOffset.Size = New System.Drawing.Size(51, 23)
         Me.RamStartOffset.TabIndex = 99
@@ -2933,7 +2933,7 @@ Partial Class cdmaTerm
         'RamStartAddress
         '
         Me.RamStartAddress.Location = New System.Drawing.Point(67, 65)
-        Me.RamStartAddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RamStartAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.RamStartAddress.Name = "RamStartAddress"
         Me.RamStartAddress.Size = New System.Drawing.Size(51, 23)
         Me.RamStartAddress.TabIndex = 98
@@ -2953,7 +2953,7 @@ Partial Class cdmaTerm
         'SearchBinButton
         '
         Me.SearchBinButton.Location = New System.Drawing.Point(44, 213)
-        Me.SearchBinButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SearchBinButton.Margin = New System.Windows.Forms.Padding(4)
         Me.SearchBinButton.Name = "SearchBinButton"
         Me.SearchBinButton.Size = New System.Drawing.Size(152, 28)
         Me.SearchBinButton.TabIndex = 96
@@ -2965,7 +2965,7 @@ Partial Class cdmaTerm
         Me.ResultsListBox1.FormattingEnabled = True
         Me.ResultsListBox1.ItemHeight = 17
         Me.ResultsListBox1.Location = New System.Drawing.Point(239, 60)
-        Me.ResultsListBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ResultsListBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ResultsListBox1.Name = "ResultsListBox1"
         Me.ResultsListBox1.Size = New System.Drawing.Size(92, 174)
         Me.ResultsListBox1.TabIndex = 95
@@ -2973,7 +2973,7 @@ Partial Class cdmaTerm
         'ReadRamButton
         '
         Me.ReadRamButton.Location = New System.Drawing.Point(43, 167)
-        Me.ReadRamButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadRamButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadRamButton.Name = "ReadRamButton"
         Me.ReadRamButton.Size = New System.Drawing.Size(152, 28)
         Me.ReadRamButton.TabIndex = 69
@@ -2984,7 +2984,7 @@ Partial Class cdmaTerm
         '
         Me.ReadRamForSPCCheckbox.AutoSize = True
         Me.ReadRamForSPCCheckbox.Location = New System.Drawing.Point(67, 134)
-        Me.ReadRamForSPCCheckbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadRamForSPCCheckbox.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadRamForSPCCheckbox.Name = "ReadRamForSPCCheckbox"
         Me.ReadRamForSPCCheckbox.Size = New System.Drawing.Size(82, 21)
         Me.ReadRamForSPCCheckbox.TabIndex = 94
@@ -3015,7 +3015,7 @@ Partial Class cdmaTerm
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
         Me.PictureBox4.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(189, 608)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -3036,10 +3036,10 @@ Partial Class cdmaTerm
         Me.EFS.Controls.Add(Me.Button8)
         Me.EFS.Controls.Add(Me.FileTreeView2)
         Me.EFS.Controls.Add(Me.FolderTreeView1)
-        Me.EFS.Location = New System.Drawing.Point(4, 57)
-        Me.EFS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.EFS.Location = New System.Drawing.Point(4, 29)
+        Me.EFS.Margin = New System.Windows.Forms.Padding(4)
         Me.EFS.Name = "EFS"
-        Me.EFS.Size = New System.Drawing.Size(872, 586)
+        Me.EFS.Size = New System.Drawing.Size(872, 614)
         Me.EFS.TabIndex = 7
         Me.EFS.Text = "EFS*"
         Me.EFS.UseVisualStyleBackColor = True
@@ -3047,7 +3047,7 @@ Partial Class cdmaTerm
         'DeleteEFSButton
         '
         Me.DeleteEFSButton.Location = New System.Drawing.Point(743, 212)
-        Me.DeleteEFSButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DeleteEFSButton.Margin = New System.Windows.Forms.Padding(4)
         Me.DeleteEFSButton.Name = "DeleteEFSButton"
         Me.DeleteEFSButton.Size = New System.Drawing.Size(119, 43)
         Me.DeleteEFSButton.TabIndex = 79
@@ -3057,7 +3057,7 @@ Partial Class cdmaTerm
         'ReadEFSButton
         '
         Me.ReadEFSButton.Location = New System.Drawing.Point(743, 161)
-        Me.ReadEFSButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadEFSButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadEFSButton.Name = "ReadEFSButton"
         Me.ReadEFSButton.Size = New System.Drawing.Size(119, 43)
         Me.ReadEFSButton.TabIndex = 78
@@ -3077,7 +3077,7 @@ Partial Class cdmaTerm
         'EfsPathTxtbox
         '
         Me.EfsPathTxtbox.Location = New System.Drawing.Point(99, 52)
-        Me.EfsPathTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.EfsPathTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.EfsPathTxtbox.Name = "EfsPathTxtbox"
         Me.EfsPathTxtbox.Size = New System.Drawing.Size(635, 23)
         Me.EfsPathTxtbox.TabIndex = 76
@@ -3086,7 +3086,7 @@ Partial Class cdmaTerm
         'FolderNameTxtbox
         '
         Me.FolderNameTxtbox.Location = New System.Drawing.Point(8, 571)
-        Me.FolderNameTxtbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FolderNameTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.FolderNameTxtbox.Name = "FolderNameTxtbox"
         Me.FolderNameTxtbox.Size = New System.Drawing.Size(184, 23)
         Me.FolderNameTxtbox.TabIndex = 75
@@ -3095,7 +3095,7 @@ Partial Class cdmaTerm
         'ReadFolderBtn
         '
         Me.ReadFolderBtn.Location = New System.Drawing.Point(8, 535)
-        Me.ReadFolderBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ReadFolderBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.ReadFolderBtn.Name = "ReadFolderBtn"
         Me.ReadFolderBtn.Size = New System.Drawing.Size(189, 28)
         Me.ReadFolderBtn.TabIndex = 74
@@ -3125,7 +3125,7 @@ Partial Class cdmaTerm
         'WriteEfsFileButton
         '
         Me.WriteEfsFileButton.Location = New System.Drawing.Point(743, 111)
-        Me.WriteEfsFileButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.WriteEfsFileButton.Margin = New System.Windows.Forms.Padding(4)
         Me.WriteEfsFileButton.Name = "WriteEfsFileButton"
         Me.WriteEfsFileButton.Size = New System.Drawing.Size(119, 43)
         Me.WriteEfsFileButton.TabIndex = 70
@@ -3135,7 +3135,7 @@ Partial Class cdmaTerm
         'Button8
         '
         Me.Button8.Location = New System.Drawing.Point(8, 9)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(189, 28)
         Me.Button8.TabIndex = 69
@@ -3145,22 +3145,22 @@ Partial Class cdmaTerm
         'FileTreeView2
         '
         Me.FileTreeView2.Location = New System.Drawing.Point(201, 111)
-        Me.FileTreeView2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FileTreeView2.Margin = New System.Windows.Forms.Padding(4)
         Me.FileTreeView2.Name = "FileTreeView2"
-        TreeNode1.Name = "Node0"
-        TreeNode1.Text = "EFS Files"
-        Me.FileTreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode1})
+        TreeNode27.Name = "Node0"
+        TreeNode27.Text = "EFS Files"
+        Me.FileTreeView2.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode27})
         Me.FileTreeView2.Size = New System.Drawing.Size(532, 484)
         Me.FileTreeView2.TabIndex = 1
         '
         'FolderTreeView1
         '
         Me.FolderTreeView1.Location = New System.Drawing.Point(4, 111)
-        Me.FolderTreeView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FolderTreeView1.Margin = New System.Windows.Forms.Padding(4)
         Me.FolderTreeView1.Name = "FolderTreeView1"
-        TreeNode2.Name = "Node0"
-        TreeNode2.Text = "/"
-        Me.FolderTreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode2})
+        TreeNode28.Name = "Node0"
+        TreeNode28.Text = "/"
+        Me.FolderTreeView1.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode28})
         Me.FolderTreeView1.Size = New System.Drawing.Size(188, 416)
         Me.FolderTreeView1.TabIndex = 0
         '
@@ -3170,10 +3170,10 @@ Partial Class cdmaTerm
         Me.MOTO.Controls.Add(Me.motoHomeButton)
         Me.MOTO.Controls.Add(Me.MotoWebBrowser1)
         Me.MOTO.Controls.Add(Me.PictureBox6)
-        Me.MOTO.Location = New System.Drawing.Point(4, 57)
-        Me.MOTO.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MOTO.Location = New System.Drawing.Point(4, 29)
+        Me.MOTO.Margin = New System.Windows.Forms.Padding(4)
         Me.MOTO.Name = "MOTO"
-        Me.MOTO.Size = New System.Drawing.Size(872, 586)
+        Me.MOTO.Size = New System.Drawing.Size(872, 614)
         Me.MOTO.TabIndex = 8
         Me.MOTO.Text = "MOTO"
         Me.MOTO.UseVisualStyleBackColor = True
@@ -3181,7 +3181,7 @@ Partial Class cdmaTerm
         'switchToP2KButton
         '
         Me.switchToP2KButton.Location = New System.Drawing.Point(581, 570)
-        Me.switchToP2KButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.switchToP2KButton.Margin = New System.Windows.Forms.Padding(4)
         Me.switchToP2KButton.Name = "switchToP2KButton"
         Me.switchToP2KButton.Size = New System.Drawing.Size(161, 28)
         Me.switchToP2KButton.TabIndex = 82
@@ -3191,7 +3191,7 @@ Partial Class cdmaTerm
         'motoHomeButton
         '
         Me.motoHomeButton.Location = New System.Drawing.Point(751, 570)
-        Me.motoHomeButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.motoHomeButton.Margin = New System.Windows.Forms.Padding(4)
         Me.motoHomeButton.Name = "motoHomeButton"
         Me.motoHomeButton.Size = New System.Drawing.Size(100, 28)
         Me.motoHomeButton.TabIndex = 81
@@ -3201,7 +3201,7 @@ Partial Class cdmaTerm
         'MotoWebBrowser1
         '
         Me.MotoWebBrowser1.Location = New System.Drawing.Point(204, 5)
-        Me.MotoWebBrowser1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MotoWebBrowser1.Margin = New System.Windows.Forms.Padding(4)
         Me.MotoWebBrowser1.MinimumSize = New System.Drawing.Size(27, 25)
         Me.MotoWebBrowser1.Name = "MotoWebBrowser1"
         Me.MotoWebBrowser1.Size = New System.Drawing.Size(661, 550)
@@ -3211,7 +3211,7 @@ Partial Class cdmaTerm
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
         Me.PictureBox6.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(189, 608)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -3223,10 +3223,10 @@ Partial Class cdmaTerm
         Me.LogQ.Controls.Add(Me.IncludeAsciiInLogQChkbox)
         Me.LogQ.Controls.Add(Me.logQBox)
         Me.LogQ.Controls.Add(Me.logAllBox)
-        Me.LogQ.Location = New System.Drawing.Point(4, 57)
-        Me.LogQ.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LogQ.Location = New System.Drawing.Point(4, 29)
+        Me.LogQ.Margin = New System.Windows.Forms.Padding(4)
         Me.LogQ.Name = "LogQ"
-        Me.LogQ.Size = New System.Drawing.Size(872, 586)
+        Me.LogQ.Size = New System.Drawing.Size(872, 614)
         Me.LogQ.TabIndex = 10
         Me.LogQ.Text = "LOG Q"
         Me.LogQ.UseVisualStyleBackColor = True
@@ -3237,7 +3237,7 @@ Partial Class cdmaTerm
         Me.IncludeAsciiInLogQChkbox.Checked = True
         Me.IncludeAsciiInLogQChkbox.CheckState = System.Windows.Forms.CheckState.Checked
         Me.IncludeAsciiInLogQChkbox.Location = New System.Drawing.Point(4, 433)
-        Me.IncludeAsciiInLogQChkbox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.IncludeAsciiInLogQChkbox.Margin = New System.Windows.Forms.Padding(4)
         Me.IncludeAsciiInLogQChkbox.Name = "IncludeAsciiInLogQChkbox"
         Me.IncludeAsciiInLogQChkbox.Size = New System.Drawing.Size(186, 21)
         Me.IncludeAsciiInLogQChkbox.TabIndex = 3
@@ -3247,7 +3247,7 @@ Partial Class cdmaTerm
         'logQBox
         '
         Me.logQBox.Location = New System.Drawing.Point(5, 5)
-        Me.logQBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.logQBox.Margin = New System.Windows.Forms.Padding(4)
         Me.logQBox.Name = "logQBox"
         Me.logQBox.Size = New System.Drawing.Size(859, 420)
         Me.logQBox.TabIndex = 2
@@ -3256,7 +3256,7 @@ Partial Class cdmaTerm
         'logAllBox
         '
         Me.logAllBox.Location = New System.Drawing.Point(5, 460)
-        Me.logAllBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.logAllBox.Margin = New System.Windows.Forms.Padding(4)
         Me.logAllBox.Multiline = True
         Me.logAllBox.Name = "logAllBox"
         Me.logAllBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -3266,10 +3266,10 @@ Partial Class cdmaTerm
         'Update
         '
         Me.Update.Controls.Add(Me.CheckUpdateWebBrowser)
-        Me.Update.Location = New System.Drawing.Point(4, 57)
-        Me.Update.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Update.Location = New System.Drawing.Point(4, 29)
+        Me.Update.Margin = New System.Windows.Forms.Padding(4)
         Me.Update.Name = "Update"
-        Me.Update.Size = New System.Drawing.Size(872, 586)
+        Me.Update.Size = New System.Drawing.Size(872, 614)
         Me.Update.TabIndex = 11
         Me.Update.Text = "Check For Update"
         Me.Update.UseVisualStyleBackColor = True
@@ -3277,7 +3277,7 @@ Partial Class cdmaTerm
         'CheckUpdateWebBrowser
         '
         Me.CheckUpdateWebBrowser.Location = New System.Drawing.Point(4, 4)
-        Me.CheckUpdateWebBrowser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckUpdateWebBrowser.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckUpdateWebBrowser.MinimumSize = New System.Drawing.Size(27, 25)
         Me.CheckUpdateWebBrowser.Name = "CheckUpdateWebBrowser"
         Me.CheckUpdateWebBrowser.Size = New System.Drawing.Size(861, 575)
@@ -3297,9 +3297,9 @@ Partial Class cdmaTerm
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(1173, 21)
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(1134, 21)
         Me.ToolStripStatusLabel1.Spring = True
-        Me.ToolStripStatusLabel1.Text = "cdmaDevTerm"
+        Me.ToolStripStatusLabel1.Text = "cdmaModTool"
         '
         'ToolStripProgressBar1
         '
@@ -3316,22 +3316,22 @@ Partial Class cdmaTerm
         Me.Label9.Location = New System.Drawing.Point(1029, 638)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(290, 17)
+        Me.Label9.Size = New System.Drawing.Size(252, 17)
         Me.Label9.TabIndex = 71
-        Me.Label9.Text = "(c) 2010-2012 www.chromableedstudios.com"
+        Me.Label9.Text = "(c) 2012-2026 www.digitalconsulting.cc"
         '
         'PictureBox7
         '
         Me.PictureBox7.Image = Global.cdmaTerm.My.Resources.Resources.k_64x64
         Me.PictureBox7.Location = New System.Drawing.Point(1021, 203)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(187, 172)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox7.TabIndex = 72
         Me.PictureBox7.TabStop = False
         '
-        'cdmaTerm
+        'cdmaModTool
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -3344,9 +3344,9 @@ Partial Class cdmaTerm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox7)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Name = "cdmaTerm"
-        Me.Text = "CdmaDevTerm "
+        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Name = "cdmaModTool"
+        Me.Text = "CdmaEdgeModTool"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
